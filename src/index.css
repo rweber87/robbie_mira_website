@@ -1,34 +1,42 @@
 @font-face {
   font-family: 'JosefinSansRegular';
-  src: local('JosefinSansRegular'), url(./fonts/JosefinSans-Regular.ttf) format('truetype'); 
+  src: local('JosefinSansRegular'),
+    url(./fonts/JosefinSans-Regular.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'JosefinSansLight';
-  src: local('JosefinSansLight'), url(./fonts/JosefinSans-Light.ttf) format('truetype'); 
+  src: local('JosefinSansLight'),
+    url(./fonts/JosefinSans-Light.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'JosefinSansBold';
-  src: local('JosefinSansBold'), url(./fonts/JosefinSans-Bold.ttf) format('truetype'); 
+  src: local('JosefinSansBold'),
+    url(./fonts/JosefinSans-Bold.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'JosefinSlabSemiBold';
-  src: local('JosefinSlabSemiBold'), url(./fonts/JosefinSlab-SemiBold.ttf) format('truetype'); 
+  src: local('JosefinSlabSemiBold'),
+    url(./fonts/JosefinSlab-SemiBold.ttf) format('truetype');
+}
+
+#root {
+  background-color: #007884;
 }
 
 body {
   background-color: #007884;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.homepage-view{
+.homepage-view {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -105,7 +113,7 @@ body {
   color: white;
   font-size: 2vw;
   letter-spacing: 3px;
-  margin-top: 1%
+  margin-top: 1%;
 }
 
 .invite-text {
@@ -125,6 +133,36 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* CSS FOR REMAINDER OF APP */
+
+.menu {
+  color: #bbb082;
+  display: flex;
+  justify-content: space-between;
+  margin: 3vw 8vw 3vw 8vw;
+  border-top: 1px dotted #bbb082;
+  padding-top: 3vw;
+  font-size: 1.5em;
+}
+
+a.menu-item {
+  color: white;
+  font-family: 'JosefinSlabSemiBold';
+  font-size: 1.6vw;
+}
+
+a.menu-item:hover {
+  color: #bbb082;
+}
+
+i.big.icon.content {
+  font-size: 3em;
+}
+
+.header-names {
+  font-size: 4vw;
 }

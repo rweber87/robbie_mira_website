@@ -1,0 +1,21 @@
+mutation(
+    $first_name: String!
+    $last_name: String!
+    $address: String!
+    $email: String!
+    $response: String!
+) {
+  addResponse(
+    first_name: $first_name
+    last_name: $last_name
+    address: $address
+    email: $email
+    response: $response
+) {
+    first_name
+    last_name
+    address
+    email
+    response
+  }
+}
