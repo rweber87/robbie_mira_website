@@ -1,37 +1,26 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Photo extends Component {
-  constructor(props) {
-    super(props);
+export default function Photo(props) {
+  const { imageSelected } = props;
 
-    this.state = {
-      imageRendered: undefined
-    };
-  }
-
-  render() {
-    const { imageSelected } = this.props;
-    return (
+  return (
+    <div
+      className='photo-image'
+      style={{
+        width: '100%',
+        maxHeight: '350px'
+      }}
+    >
       <div
         style={{
-          height: '30vw',
-          width: '100%',
-          maxHeight: '350px'
+          backgroundImage: `url(${imageSelected.image})`,
+          backgroundPosition: `${imageSelected.style.backgroundPosition}`,
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: '100%',
+          overflow: 'hidden',
+          height: '100%'
         }}
-      >
-        <div
-          style={{
-            backgroundImage: `url(${imageSelected.image})`,
-            backgroundPosition: `${imageSelected.style.backgroundPosition}`,
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: '100%',
-            overflow: 'hidden',
-            height: '100%'
-          }}
-        ></div>
-      </div>
-    );
-  }
+      ></div>
+    </div>
+  );
 }
-
-export default Photo;

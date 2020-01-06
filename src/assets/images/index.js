@@ -33,13 +33,13 @@ const images = {
   image5: {
     image: image5,
     style: {
-      backgroundPosition: '50% 47%'
+      backgroundPosition: '50% 50%'
     }
   },
   image6: {
     image: image6,
     style: {
-      backgroundPosition: '50% 25%'
+      backgroundPosition: '50% 15%'
     }
   }
 };

@@ -61,21 +61,21 @@ body {
   font-family: 'JosefinSlabSemiBold';
 }
 
-.date {
+/* .date {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding-top: 7%;
   color: white;
-}
+} */
 
-.day {
+/* .day {
   font-size: 7.72vw;
   font-family: 'JosefinSansLight';
   padding: 0px 25px 0px 25px;
-}
+} */
 
-.left-border-line {
+/* .left-border-line {
   display: flex;
   align-items: center;
   border-right: 1px solid white;
@@ -91,11 +91,21 @@ body {
   height: 5vw;
   margin-bottom: 1vw;
   padding-right: 25px;
-}
+} */
 
-.month-year {
+/* .month-year {
   font-size: 3.2vw;
   font-family: 'JosefinSansBold';
+} */
+
+.welcome-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #f0f5f4;
+  font-family: 'JosefinSansRegular';
+  padding: 5% 30% 5% 30%;
+  text-align: center;
 }
 
 .top-border-line {
@@ -143,7 +153,7 @@ code {
   color: #bbb082;
   display: flex;
   justify-content: space-between;
-  margin: 3vw 8vw 3vw 8vw;
+  margin: 3vw 8vw 0vw 8vw;
   border-top: 1px dotted #bbb082;
   padding-top: 3vw;
   font-size: 1.5em;
@@ -152,7 +162,7 @@ code {
 a.menu-item {
   color: white;
   font-family: 'JosefinSlabSemiBold';
-  font-size: 1.6vw;
+  font-size: 16px;
 }
 
 a.menu-item:hover {
@@ -165,4 +175,188 @@ i.big.icon.content {
 
 .header-names {
   font-size: 4vw;
+}
+
+.photo-image {
+  height: 33vw;
+}
+
+.home-screen-text {
+  top: 50%;
+  left: 37%;
+  position: absolute;
+}
+
+.home-screen-text > .std-header {
+  display: flex;
+  font-size: 40px;
+  font-family: 'JosefinSansBold';
+}
+
+.home-screen-text > .date {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 7%;
+  justify-content: center;
+}
+
+#year {
+  font-size: 20px;
+}
+
+.home-screen-text > .date > .day {
+  font-size: 32px;
+}
+
+.home-screen-text > .date > .month-year,
+.day,
+.month-year {
+  color: #bbb082;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.home-screen-text > .date > .month-year {
+  font-family: 'JosefinSansBold';
+  font-size: 18px;
+}
+
+.home-screen-text > .date > .left-border-line,
+.right-border-line {
+  height: 2vw;
+  margin-bottom: 1px;
+}
+
+.home-screen-text > .date > .day {
+  padding: 0px 10px 0px 10px;
+  font-size: 2.5vw;
+  margin-bottom: 0.5vw;
+}
+
+.home-screen-text > .date > .left-border-line {
+  border-right: 0.5px solid #bbb082;
+  padding-left: 10px;
+  margin-bottom: 0.5vw;
+}
+
+.home-screen-text > .date > .right-border-line {
+  border-left: 0.5px solid #bbb082;
+  padding-right: 10px;
+  margin-bottom: 0.5vw;
+}
+
+@media only screen and (max-width: 411px) {
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 33vw;
+    left: 0;
+    background-color: #15646b;
+    overflow-x: hidden;
+    transition: 1s;
+    padding-top: 60px;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #bbb082;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #bbb082;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 3px;
+    right: 11px;
+    font-size: 46px;
+    margin-left: 50px;
+  }
+
+  a.menu-item {
+    color: #bbb082;
+    font-family: 'JosefinSlabSemiBold';
+  }
+
+  a.closebtn {
+    color: #bbb082;
+    font-family: 'JosefinSlabSemiBold';
+  }
+
+  .home-screen-text {
+    top: 7%;
+    left: 17%;
+    position: absolute;
+  }
+
+  .home-screen-text > .std-header {
+    display: flex;
+    color: white;
+    font-size: 8.5vw;
+    font-family: 'JosefinSansBold';
+  }
+
+  .home-screen-text > .date {
+    display: flex;
+    justify-content: center;
+    padding-top: 7%;
+  }
+
+  .home-screen-text > .date > .month-year,
+  .day,
+  .month-year {
+    color: #bbb082;
+  }
+
+  .home-screen-text > .date > .day {
+    font-size: 7.72vw;
+    font-family: 'JosefinSansRegular';
+    padding: 0px 5px 0px 5px;
+    margin-bottom: 0px;
+  }
+
+  .home-screen-text > .date > .left-border-line {
+    display: flex;
+    align-items: center;
+    height: 7vw;
+    margin-bottom: 1vw;
+    border-right: 0.1px solid #bbb082;
+    padding-left: 10px;
+  }
+
+  .home-screen-text > .date > .right-border-line {
+    display: flex;
+    align-items: center;
+    height: 7vw;
+    margin-bottom: 1vw;
+    border-left: 0.1px solid #bbb082;
+    padding-right: 10px;
+  }
+
+  .home-screen-text > .date > .month-year {
+    font-size: 5.5vw;
+    font-family: 'JosefinSansBold';
+  }
+
+  #year {
+    font-size: 6vw;
+  }
+
+  .photo-image {
+    height: 33vw;
+  }
+
+  .welcome-text {
+    font-size: 3vw;
+    padding: 10% 15% 0% 15%;
+  }
 }
