@@ -3,22 +3,14 @@ import React from 'react';
 export default function Travel() {
   return (
     <div className='welcome-text'>
-      <div>TRAVEL</div>
-      <br />
-      <div>
-        ES IS SOWEIT! :) THE BIG DAY IS APPROACHING FAST AND WE CAN'T WAIT TO
-        CELEBRATE WITH YOU!
+      <div className='event-gold-date'>
+        <div>Closest Airport</div>
       </div>
-      <br />
-      <div>
-        AT THIS POINT ALL OF YOU SHOULD HAVE RECEIVED THE FORMAL INVITATION. IF
-        NOT, PLEASE REACH OUT TO US ASAP.
+      <div className='event-white-date'>
+        <div>Munich (MUC) Franz-Josef-Strauss Flughafen</div>
       </div>
-      <br />
-      <div>
-        WE PUT TOGETHER THIS WEBSITE TO HOPEFULLY ANSWER ALL THE QUESTIONS YOU
-        MIGHT HAVE. IF SOMETHING IS MISSING PLEASE REACH OUT TO US, WE ARE HAPPY
-        TO HELP.
+      <div className='welcome-text-paragraph'>
+        (reachable via public transport in approx 45 min)
       </div>
     </div>
   );
