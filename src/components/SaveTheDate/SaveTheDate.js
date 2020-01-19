@@ -1,14 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 export default function SaveTheDate() {
   return (
     <div className='homepage-view'>
-      <Link to='/wedding'>
-        <div>
-          <header className='std-header'>SAVE OUR DATE</header>
-        </div>
-      </Link>
+      <div>
+        <header className='std-header'>SAVE OUR DATE</header>
+      </div>
       <div className='top-border-line'></div>
       <div>
         <p className='std-subheader'>CUZ WE'RE DOING IT. AGAIN.</p>
