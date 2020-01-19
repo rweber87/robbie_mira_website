@@ -3,51 +3,71 @@ import { Link } from 'react-router-dom';
 
 export function Menu(props) {
   const { changePhoto, images, selectedMenuItem } = props;
-  console.log('hey', selectedMenuItem);
+
   return (
     <div className='menu'>
-      <Link
-        className='menu-item'
-        to='/welcome'
-        onClick={() => changePhoto(images.image1, 'welcome')}
-      >
-        WELCOME
-      </Link>
-      <Link
-        className='menu-item'
-        to='/events'
-        onClick={() => changePhoto(images.image2, 'events')}
-      >
-        EVENTS
-      </Link>
-      <Link
-        className='menu-item'
-        to='/travel'
-        onClick={() => changePhoto(images.image3, 'travel')}
-      >
-        TRAVEL
-      </Link>
-      <Link
-        className='menu-item'
-        to='/lodging'
-        onClick={() => changePhoto(images.image4, 'lodging')}
-      >
-        LODGING
-      </Link>
-      <Link
-        className='menu-item'
-        to='/rsvp'
-        onClick={() => changePhoto(images.image5, 'rsvp')}
-      >
-        RSVP
-      </Link>
-      <Link
-        className='menu-item'
-        to='/qanda'
-        onClick={() => changePhoto(images.image6, 'qanda')}
-      >
-        Q & A
-      </Link>
+      <div className='inner-menu'>
+        <Link
+          className={
+            'menu-item ' +
+            `${selectedMenuItem === 'welcome' ? 'active' : 'inactive'}`
+          }
+          to='/wedding/welcome'
+          onClick={() => changePhoto(images.welcome, 'welcome')}
+        >
+          WELCOME
+        </Link>
+        <Link
+          className={
+            'menu-item ' +
+            `${selectedMenuItem === 'events' ? 'active' : 'inactive'}`
+          }
+          to='/wedding/events'
+          onClick={() => changePhoto(images.events, 'events')}
+        >
+          EVENTS
+        </Link>
+        <Link
+          className={
+            'menu-item ' +
+            `${selectedMenuItem === 'travel' ? 'active' : 'inactive'}`
+          }
+          to='/wedding/travel'
+          onClick={() => changePhoto(images.travel, 'travel')}
+        >
+          TRAVEL
+        </Link>
+        <Link
+          className={
+            'menu-item ' +
+            `${selectedMenuItem === 'lodging' ? 'active' : 'inactive'}`
+          }
+          to='/wedding/lodging'
+          onClick={() => changePhoto(images.lodging, 'lodging')}
+        >
+          LODGING
+        </Link>
+        <Link
+          className={
+            'menu-item ' +
+            `${selectedMenuItem === 'rsvp' ? 'active' : 'inactive'}`
+          }
+          to='/wedding/rsvp'
+          onClick={() => changePhoto(images.rsvp, 'rsvp')}
+        >
+          RSVP
+        </Link>
+        <Link
+          className={
+            'menu-item ' +
+            `${selectedMenuItem === 'qanda' ? 'active' : 'inactive'}`
+          }
+          to='/wedding/qanda'
+          onClick={() => changePhoto(images.qanda, 'qanda')}
+        >
+          Q & A
+        </Link>
+      </div>
     </div>
   );
 }

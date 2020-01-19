@@ -2,7 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function HamburgerMenu(props) {
-  const { changePhoto, hamburgerWidth, images, closerHamburgerMenu } = props;
+  const {
+    changePhoto,
+    closerHamburgerMenu,
+    hamburgerWidth,
+    images,
+    selectedMenuItem
+  } = props;
 
   return (
     <div id='mySidenav' className='sidenav' style={{ width: hamburgerWidth }}>
@@ -15,66 +21,84 @@ export default function HamburgerMenu(props) {
         &times;
       </a>
       <Link
-        className='menu-item'
-        to='/welcome'
+        className={
+          'menu-item ' +
+          `${selectedMenuItem === 'welcome' ? 'active' : 'inactive'}`
+        }
+        to='/wedding/welcome'
         onClick={() => {
-          changePhoto(images.image1, 'welcome');
+          changePhoto(images.welcome, 'welcome');
           closerHamburgerMenu();
         }}
       >
         Welcome
       </Link>
       <Link
-        className='menu-item'
-        to='/events'
+        className={
+          'menu-item ' +
+          `${selectedMenuItem === 'events' ? 'active' : 'inactive'}`
+        }
+        to='/wedding/events'
         onClick={() => {
-          changePhoto(images.image2, 'events');
+          changePhoto(images.events, 'events');
           closerHamburgerMenu();
         }}
       >
         Events
       </Link>
       <Link
-        className='menu-item'
-        to='/travel'
+        className={
+          'menu-item ' +
+          `${selectedMenuItem === 'travel' ? 'active' : 'inactive'}`
+        }
+        to='/wedding/travel'
         onClick={() => {
-          changePhoto(images.image3, 'travel');
+          changePhoto(images.travel, 'travel');
           closerHamburgerMenu();
         }}
       >
         Travel
       </Link>
       <Link
-        className='menu-item'
-        to='/lodging'
+        className={
+          'menu-item ' +
+          `${selectedMenuItem === 'lodging' ? 'active' : 'inactive'}`
+        }
+        to='/wedding/lodging'
         onClick={() => {
-          changePhoto(images.image4, 'lodging');
+          changePhoto(images.lodging, 'lodging');
           closerHamburgerMenu();
         }}
       >
         Lodging
       </Link>
       <Link
-        className='menu-item'
-        to='/rsvp'
+        className={
+          'menu-item ' +
+          `${selectedMenuItem === 'rsvp' ? 'active' : 'inactive'}`
+        }
+        to='/wedding/rsvp'
         style={{
           paddingTop: '13px'
         }}
         onClick={() => {
-          changePhoto(images.image5, 'rsvp');
+          changePhoto(images.rsvp, 'rsvp');
           closerHamburgerMenu();
         }}
       >
         RSVP
       </Link>
       <Link
-        className='menu-item'
-        to='/qanda'
+        className={
+          'menu-item ' +
+          `${selectedMenuItem === 'qanda' ? 'active' : 'inactive'}`
+        }
+        to='/wedding/qanda'
         style={{
           paddingTop: '10px'
         }}
         onClick={() => {
-          changePhoto(images.image6, 'qanda');
+          changePhoto(images.qanda, 'qanda');
           closerHamburgerMenu();
         }}
       >

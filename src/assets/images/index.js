@@ -6,42 +6,61 @@ import image5 from '../images/wedding_img_5.jpg';
 import image6 from '../images/wedding_img_6.jpg';
 
 const images = {
-  image1: {
+  welcome: {
     image: image1,
     style: {
       backgroundPosition: '50% 25%'
     }
   },
-  image2: {
+  events: {
     image: image2,
     style: {
       backgroundPosition: '50% 35%'
     }
   },
-  image3: {
+  travel: {
     image: image3,
     style: {
-      backgroundPosition: '50% 0%'
+      backgroundPosition: '50% 10%'
     }
   },
-  image4: {
+  lodging: {
     image: image4,
     style: {
       backgroundPosition: '50% 60%'
     }
   },
-  image5: {
+  rsvp: {
     image: image5,
     style: {
       backgroundPosition: '50% 50%'
     }
   },
-  image6: {
+  qanda: {
     image: image6,
     style: {
-      backgroundPosition: '50% 15%'
+      backgroundPosition: '50% 55%'
     }
   }
 };
 
 export default images;
+
+export function imagesFunction(images, imageSelected) {
+  switch (imageSelected) {
+    case 'welcome':
+      return images.welcome;
+    case 'events':
+      return images.events;
+    case 'travel':
+      return images.travel;
+    case 'lodgins':
+      return images.lodgins;
+    case 'rsvp':
+      return images.rsvp;
+    case 'qanda':
+      return images.qanda;
+    default:
+      return images.welcome;
+  }
+}

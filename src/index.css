@@ -61,21 +61,21 @@ body {
   font-family: 'JosefinSlabSemiBold';
 }
 
-/* .date {
+.date-home-screen {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding-top: 7%;
   color: white;
-} */
+}
 
-/* .day {
+.day-home-screen {
   font-size: 7.72vw;
   font-family: 'JosefinSansLight';
   padding: 0px 25px 0px 25px;
-} */
+}
 
-/* .left-border-line {
+.left-border-line-home-screen {
   display: flex;
   align-items: center;
   border-right: 1px solid white;
@@ -84,19 +84,19 @@ body {
   padding-left: 25px;
 }
 
-.right-border-line {
+.right-border-line-home-screen {
   display: flex;
   align-items: center;
   border-left: 1px solid white;
   height: 5vw;
   margin-bottom: 1vw;
   padding-right: 25px;
-} */
+}
 
-/* .month-year {
+.month-year-home-screen {
   font-size: 3.2vw;
   font-family: 'JosefinSansBold';
-} */
+}
 
 .welcome-text {
   display: flex;
@@ -118,6 +118,7 @@ body {
   border-bottom: 1px dotted #bbb082;
   width: 31vw;
 }
+
 .location {
   font-family: 'JosefinSansLight';
   color: white;
@@ -147,15 +148,17 @@ code {
     monospace;
 }
 
-/* CSS FOR REMAINDER OF APP */
-
 .menu {
   color: #bbb082;
+  margin: 3vw 6vw 0vw 6vw;
+  border-top: 2px dotted #bbb082;
+  padding-top: 3vw;
+}
+
+.inner-menu {
   display: flex;
   justify-content: space-between;
-  margin: 3vw 8vw 0vw 8vw;
-  border-top: 1px dotted #bbb082;
-  padding-top: 3vw;
+  margin: 0vw 2vw;
   font-size: 1.5em;
 }
 
@@ -166,6 +169,10 @@ a.menu-item {
 }
 
 a.menu-item:hover {
+  color: #bbb082;
+}
+
+a.menu-item.active {
   color: #bbb082;
 }
 
@@ -247,6 +254,86 @@ i.big.icon.content {
   margin-bottom: 0.5vw;
 }
 
+.outer-ui-form {
+  margin: 3vw 6vw 0vw 6vw;
+}
+
+.ui.form {
+  margin: 0vw 2vw;
+  padding: 5vw 12vw 0vw 12vw;
+}
+
+.ui.form .field > label {
+  color: #bbb082 !important;
+  font-family: 'JosefinSansRegular' !important;
+  font-size: 1.1em !important;
+}
+
+div.field {
+  color: #bbb082 !important;
+  font-family: 'JosefinSansRegular' !important;
+  font-size: 1.1em !important;
+  font-weight: 700;
+}
+
+input[type='text'] {
+  background-color: #33858c !important;
+  border: 1px solid white !important;
+  color: white !important;
+  font-family: 'JosefinSansRegular' !important;
+}
+
+textarea {
+  background-color: #33858c !important;
+  border: 1px solid white !important;
+  color: white !important;
+  font-family: 'JosefinSansRegular' !important;
+}
+
+.ui.checkbox input.hidden + label {
+  color: white !important;
+  font-family: 'JosefinSansLight' !important;
+  font-size: 1.5em !important;
+}
+
+button.ui.button {
+  border: 1px solid white;
+  background-color: #bbb082;
+  color: #007884;
+  font-family: 'JosefinSlabSemiBold';
+  font-size: 1.5vw;
+}
+
+input[type='checkbox'] + label::before {
+  background-color: #33858c !important;
+  color: white !important;
+}
+
+input[type='checkbox'] + label::after {
+  color: white !important;
+}
+
+.field {
+  padding: 0.5vw 0vw 0vw 0vw;
+}
+
+.fields {
+  padding: 0.5vw 0vw 0vw 0vw;
+}
+
+.field.submit-button {
+  padding: 2vw 0vw 4vw 0vw;
+}
+
+div.field.attend {
+  padding: 2vw 0vw 0vw 0vw;
+  font-size: 1.1em !important;
+}
+
+.pooper {
+  padding-left: 5vw !important;
+}
+
 @media only screen and (max-width: 411px) {
   .sidenav {
     height: 100%;
@@ -283,8 +370,12 @@ i.big.icon.content {
   }
 
   a.menu-item {
-    color: #bbb082;
+    color: white;
     font-family: 'JosefinSlabSemiBold';
+  }
+
+  a.menu-item.active {
+    color: #bbb082;
   }
 
   a.closebtn {
@@ -358,5 +449,9 @@ i.big.icon.content {
   .welcome-text {
     font-size: 3vw;
     padding: 10% 15% 0% 15%;
+  }
+
+  .pooper {
+    padding-left: 0vw !important;
   }
 }
