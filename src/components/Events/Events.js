@@ -62,8 +62,8 @@ export default function Events() {
         <div className='welcome-text-paragraph-thanks'>Cost: xxx €/Person</div>
         <div className='welcome-text-paragraph'>
           If you are interested in exploring the city with us, please let us
-          know by <b className='events-reserve-date'>June 5th 2020</b> so we can
-          make arrangements.
+          know by<span className='events-reserve-date'> June 5th 2020 </span>so
+          we can make arrangements.
         </div>
         <div className='event-gold-date'>
           <div>Bike Tour Through Munich</div>
@@ -85,9 +85,11 @@ export default function Events() {
         </div>
         <div className='welcome-text-paragraph-thanks'>Cost: xxx €/Person</div>
         <div className='welcome-text-paragraph'>
-          If you are interested in exploring the city with us, please let us
-          know by <b className='events-reserve-date'>June 5th 2020</b> so we can
-          make arrangements.
+          <div>
+            If you are interested in exploring the city with us, please let us
+            know by<span className='events-reserve-date'> June 5th 2020 </span>
+            so we can make arrangements.
+          </div>
         </div>
         <div className='event-gold-date'>
           <div>
@@ -113,8 +115,8 @@ export default function Events() {
         <div className='welcome-text-paragraph-thanks'>Cost: xxx €/Person</div>
         <div className='welcome-text-paragraph'>
           If you are interested, please let us know by{' '}
-          <b className='events-reserve-date'>April 12th 2020</b> so we can make
-          arrangements.
+          <span className='events-reserve-date'>April 12th 2020</span> so we can
+          make arrangements.
         </div>
         <div className='dotted-line-separator'></div>
         <div className='event-sign-up'>OTHER RECOMMENDATIONS</div>
