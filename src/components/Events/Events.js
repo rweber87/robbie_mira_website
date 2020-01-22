@@ -3,25 +3,31 @@ import React from 'react';
 export default function Events() {
   return (
     <div className='welcome-text'>
-      <div className='welcome-header-text'>{`CEREMONY & CELEBRATION`}</div>
-      <div className='event-white-date'>
+      <div className='welcome-header-text'>{`THE MAIN EVENT`}</div>
+      <div className='event-white-date'>CEREMONY</div>
+      <div className='event-gold-date'>
         <div>Sept 5, 2020 | 4 PM | English Garden, Munich</div>
       </div>
       <div className='welcome-text-paragraph'>
         We picked a special spot in the English Garden to hold our ceremony.
         Check back here closer to the date to find out more details.
       </div>
+      <div className='event-white-date'>CELEBRATION</div>
+      <div className='event-gold-date'>
+        <div>
+          Sept 5, 2020 | 6 PM |{' '}
+          <a
+            style={{ color: '#bbb082' }}
+            href='https://goo.gl/maps/t1n1QkwV4g3Jgd329'
+          >
+            Seehaus
+          </a>
+        </div>
+      </div>
       <div className='welcome-text-paragraph-thanks'>
-        After the ceremony, we will walk to the{' '}
-        <a
-          className='events-href'
-          href='https://goo.gl/maps/t1n1QkwV4g3Jgd329'
-          style={{ color: 'white' }}
-        >
-          Seehaus
-        </a>{' '}
-        (12 minute walk) and get the party started. Be ready to enjoy a
-        delicious dinner and yummy drinks.
+        After the ceremony, we will walk to the Seehaus (12-minute walk) and get
+        the party started. Be ready to enjoy a delicious dinner and yummy
+        drinks.
         <div className='welcome-text-paragraph'>
           Don’t forget to bring comfy shoes so we can party all night long!
         </div>
@@ -39,45 +45,46 @@ export default function Events() {
           are from Munich and wish to join either of the 2 scheduled activities,
           let us know and we will see if we can make it happen.
         </div>
-        <div className='event-sign-up'>SIGN UP OPTIONS</div>
-        <div className='event-gold-date'>
-          <div>Third Reich walking tour through Munich</div>
-        </div>
         <div className='event-white-date'>
-          <div>Sept 1, 2020 | 4 - 7 PM | Meeting point Marienplatz, Munich</div>
+          <div>THIRD REICH WALKING TOUR THROUGH MUNICH</div>
+        </div>
+        <div className='event-gold-date'>
+          Sept 1, 2020 | exact time to come | Meeting point Marienplatz, Munich
         </div>
         <div className='welcome-text-paragraph-thanks'>
           Munich comes with a rich history that our friend Chris knows
           everything about. In this 3-hour Third Reich Walking Tour through
           Munich you will learn everything there is to know about Munich's
-          history leading up to and during WWII. Chris is a charismatic guy but
-          treats the events that took place with respect and seriousness. The
-          participants of this trip should be ready to do the same. It will be a
-          fair amount of walking so wear good walking shoes.
+          history leading up to and during WWII. Chris is a charismatic and fun
+          guy but treats the events that took place with respect and
+          seriousness. The participants of this trip should be ready to do the
+          same. It will be a fair amount of walking so wear good walking shoes.
         </div>
         <div className='welcome-text-paragraph'>
           (A bit of rain never hurt anybody. But if it is pouring with rain this
           event might get canceled)
-        </div>
-        <div className='welcome-text-paragraph-thanks'>Cost: xxx €/Person</div>
-        <div className='welcome-text-paragraph'>
-          If you are interested in exploring the city with us, please let us
-          know by<span className='events-reserve-date'> June 5th 2020 </span>so
-          we can make arrangements.
-        </div>
-        <div className='event-gold-date'>
-          <div>Bike Tour Through Munich</div>
-        </div>
-        <div className='event-white-date'>
-          <div>
-            Sept 2, 2020 | 12 - 3 PM | Meeting point Marienplatz, Munich
-          </div>
         </div>
         <div className='welcome-text-paragraph-thanks'>
-          Our dear friend Kyle knows the city and its rich history inside out
-          and will give everybody who is up for it a 3-hour bike tour through
-          Munich. Bikes will be provided, but it would be good if you knew how
-          to ride one{` ;-)`}
+          Cost: Tip your tour guide what you think is appropriate for this
+          experience
+        </div>
+        <div className='welcome-text-paragraph'>
+          To book a spot on this tour please reach out to us via email by{' '}
+          <span className='events-reserve-date'>June 5th 2020</span> so we can
+          make arrangements.
+        </div>
+        <div className='event-white-date'>
+          <div>BIKE TOUR THROUGH MUNICH</div>
+        </div>
+        <div className='event-gold-date'>
+          Sept 2, 2020 | 12 - 3 PM | Meeting point Marienplatz, Munich
+        </div>
+        <div className='welcome-text-paragraph-thanks'>
+          Our dear friend Kyle is a fantastic tour guide and knows the city and
+          its rich history inside out and will give everybody who is up for it a
+          3.5-hour bike tour through Munich. There will be a stop in the
+          beergarden of the English Garden for food and drinks. Bikes will be
+          provided, but it would be good if you knew how to ride one{` ;-)`}
         </div>
         <div className='welcome-text-paragraph'>
           (A bit of rain never hurt anybody. But if it is pouring with rain this
@@ -86,43 +93,40 @@ export default function Events() {
         <div className='welcome-text-paragraph-thanks'>Cost: xxx €/Person</div>
         <div className='welcome-text-paragraph'>
           <div>
-            If you are interested in exploring the city with us, please let us
-            know by<span className='events-reserve-date'> June 5th 2020 </span>
-            so we can make arrangements.
-          </div>
-        </div>
-        <div className='event-gold-date'>
-          <div>
-            Trip to the Erdinger Herbstfest (aka the better Oktoberfest)
+            To book a spot on this tour please reach out to us via email by
+            <span className='events-reserve-date'> June 5th 2020 </span>so we
+            can make arrangements.
           </div>
         </div>
         <div className='event-white-date'>
-          <div>Sept 3, 2020 | 3 PM - open-end | Erding</div>
+          <div>
+            TRIP TO THE ERDINGER HERBSTFEST (aka the „better“ Oktoberfest)
+          </div>
+        </div>
+        <div className='event-gold-date'>
+          Sept 3, 2020 | afternoon/evening (exact time to come) | Erding
         </div>
         <div className='welcome-text-paragraph-thanks'>
           Everybody has heard about the legendary Oktoberfest. But not many get
           the chance to visit the Erdinger Herbstfest- Mira’s hometown version
           of the Oktoberfest. Prices are lower, people are friendlier, the
-          atmosphere is authentic-er?, and the beer is bett-er! ;-)
+          atmosphere is authentic-er?, and the beer is better! ;-)
         </div>
         <div className='welcome-text-paragraph'>
           We will be traveling to Erding together (45 min by train from Munich)
           and wander around the festival grounds before sitting down for food
-          and drinks and Bavarian Celebrations at 5 PM. Last beer is served at
+          and drinks and Bavarian celebrations at 5 PM. Last beer is served at
           10 PM. You can leave to head back to Munich whenever you’ve had
           enough.
         </div>
         <div className='welcome-text-paragraph-thanks'>Cost: xxx €/Person</div>
         <div className='welcome-text-paragraph'>
-          If you are interested, please let us know by{' '}
-          <span className='events-reserve-date'>April 12th 2020</span> so we can
+          To reserve a seat with our group please reach out to us via email by
+          <span className='events-reserve-date'> April 12, 2020</span> so we can
           make arrangements.
         </div>
         <div className='dotted-line-separator'></div>
-        <div className='event-sign-up'>OTHER RECOMMENDATIONS</div>
-        <div className='event-white-date'>
-          <div>English Garden</div>
-        </div>
+        <div className='event-white-date'>EXPLORE THE ENGLISH GARDEN</div>
         <div className='welcome-text-paragraph-thanks'>
           Chinese Tower beer garden
         </div>
@@ -130,9 +134,7 @@ export default function Events() {
           The “Eisbach Welle” where the surfers hang out and ride the waves
         </div>
         <div className='welcome-text-paragraph'>Monopterus</div>
-        <div className='event-white-date'>
-          <div>Munich’s museums</div>
-        </div>
+        <div className='event-white-date'>MUNICH'S MUSEUMS</div>
         <div className='welcome-text-paragraph-thanks'>Residenz Munich</div>
         <div className='welcome-text-paragraph-thanks'>
           Alte Pinakothek, Neue Pinakothek or Pinakothek der Moderne
@@ -151,21 +153,17 @@ export default function Events() {
           State Collection of Egyptian Art
         </div>
         <div className='event-white-date' style={{ paddingBottom: '3vw' }}>
-          <div>
-            <a
-              className='events-href'
-              href='https://www.tripsavvy.com/munichs-best-beer-gardens-1519979'
-              style={{
-                color: 'white'
-              }}
-            >
-              Beergardens
-            </a>
-          </div>
+          <a
+            className='events-href'
+            href='https://www.tripsavvy.com/munichs-best-beer-gardens-1519979'
+            style={{
+              color: 'white'
+            }}
+          >
+            BIERGARTENS
+          </a>
         </div>
-        <div className='event-white-date'>
-          <div>Visit The REAL Disney Castle ;)</div>
-        </div>
+        <div className='event-white-date'>VISIT THE REAL DISNEY CASTLE ;)</div>
         <div className='welcome-text-paragraph'>
           <a
             className='events-href'
@@ -177,30 +175,24 @@ export default function Events() {
           has great guides!
         </div>
         <div className='event-white-date' style={{ paddingBottom: '3vw' }}>
-          <div>
-            <a
-              className='events-href'
-              href='https://www.schloss-nymphenburg.de/englisch/tourist/admiss.htm'
-              style={{ color: 'white' }}
-            >
-              Schloss Nymphenburg
-            </a>
-          </div>
+          <a
+            className='events-href'
+            href='https://www.schloss-nymphenburg.de/englisch/tourist/admiss.htm'
+            style={{ color: 'white' }}
+          >
+            SCHLOSS NYMPHENBURG
+          </a>
         </div>
         <div className='event-white-date' style={{ paddingBottom: '3vw' }}>
-          <div>
-            <a
-              className='events-href'
-              href='https://www.mikesbiketours.com/munich/bike-rentals/mikes-bike-rentals-muenchen-fahrradverleih.html'
-              style={{ color: 'white' }}
-            >
-              Rent a bike
-            </a>
-          </div>
+          <a
+            className='events-href'
+            href='https://www.mikesbiketours.com/munich/bike-rentals/mikes-bike-rentals-muenchen-fahrradverleih.html'
+            style={{ color: 'white' }}
+          >
+            RENT A BIKE
+          </a>
         </div>
-        <div className='event-white-date'>
-          <div>“Ride” the Isar River</div>
-        </div>
+        <div className='event-white-date'>"RIDE" THE ISAR RIVER</div>
         <div className='welcome-text-paragraph-thanks'>
           <a
             className='events-href'
@@ -219,9 +211,7 @@ export default function Events() {
             By small raft or tube
           </a>
         </div>
-        <div className='event-white-date'>
-          <div>Tour a Brewery</div>
-        </div>
+        <div className='event-white-date'>TOUR A BREWERY</div>
         <div className='welcome-text-paragraph-thanks'>
           <a
             className='events-href'
@@ -243,19 +233,10 @@ export default function Events() {
         <div className='event-white-date' style={{ paddingBottom: '3vw' }}>
           <a
             className='events-href'
-            href='https://fcbayern.com/en/fixtures/profis'
-            style={{ color: 'white' }}
-          >
-            Watch FC Bayern Game
-          </a>
-        </div>
-        <div className='event-white-date' style={{ paddingBottom: '3vw' }}>
-          <a
-            className='events-href'
             href='https://boredinmunich.com/best-lakes-near-munich/'
             style={{ color: 'white' }}
           >
-            Visit a lake
+            VISIT A LAKE
           </a>
         </div>
         <div className='event-white-date' style={{ paddingBottom: '3vw' }}>
@@ -264,7 +245,7 @@ export default function Events() {
             href='https://europeupclose.com/article/top-9-day-trips-from-munich/'
             style={{ color: 'white' }}
           >
-            Visit the mountains
+            VISIT THE MOUNTAINS
           </a>
         </div>
         <div className='event-white-date' style={{ paddingBottom: '3vw' }}>
@@ -273,7 +254,7 @@ export default function Events() {
             href='https://www.kz-gedenkstaette-dachau.de/index-e.html'
             style={{ color: 'white' }}
           >
-            Visit the Dachau Concentration Camp
+            VISIT THE DACHAU CONCENTRATION CAMP
           </a>
         </div>
       </div>

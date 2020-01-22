@@ -11,25 +11,19 @@ export default function Welcome() {
       <div className='welcome-text-paragraph-thanks'>
         Everyone traveling to Munich for this event: YOU ROCK!!!
       </div>
-      <div className='welcome-text-paragraph'>{`Thank you so much for making this possible! <3`}</div>
       <div className='welcome-text-paragraph'>
-        We recommend that you book your flights and hotels as soon as feasibly
-        possible. Our website includes a lot of information that will help you
-        plan your trip. But if something is missing, please do not hesitate to
-        reach out.
+        {`Thank you so much for making this possible!`} &#10084;
       </div>
-      <div className='welcome-rsvp-text'>Step no1: RSVP! :-)</div>
+      <div className='welcome-text-paragraph'>
+        We recommend that you book your flights and hotels as soon as possible.
+        Our website includes a lot of information that will help you plan your
+        trip. But if something is missing, please do not hesitate to reach out.
+      </div>
+      <div className='welcome-rsvp-text'>Step one: RSVP! :-)</div>
       <div className='welcome-text-paragraph'>
         For our preparations, we need a headcount. Please be sure to navigate to
         the RSVP page and let us know if we can count you in (kindly reply by
-        xx.xx.2020)
-      </div>
-      <div className='welcome-text-paragraph'>
-        At this point, all of you should have received a formal invitation via
-        mail.
-      </div>
-      <div className='welcome-text-paragraph'>
-        If not, please reach out to us ASAP.
+        <span className='events-reserve-date'> February 23, 2020</span>)
       </div>
     </div>
   );

@@ -179,8 +179,9 @@ i.big.icon.content {
 }
 
 .home-screen-text {
+  align-self: 'center';
   top: 50%;
-  left: 37%;
+  left: 40%;
   position: absolute;
 }
 
@@ -372,7 +373,7 @@ div.field.attend {
   color: #bbb082;
   font-size: 20px;
   line-height: 35px;
-  font-family: 'JosefinSansRegular';
+  font-family: 'JosefinSansBold';
 }
 
 .dotted-line-separator {
@@ -392,7 +393,7 @@ div.field.attend {
 
 .event-white-date {
   color: white;
-  font-family: 'JosefinSansRegular';
+  font-family: 'JosefinSansBold';
   font-size: 20px;
   line-height: 35px;
 }

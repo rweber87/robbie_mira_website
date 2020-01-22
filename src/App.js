@@ -30,6 +30,14 @@ class App extends Component {
     };
   }
 
+  componentDidUpdate() {
+    window.onpopstate = e => {
+      e.srcElement.location.href.includes('/wedding/')
+        ? this.setState({ homeScreenDisplayed: true })
+        : this.setState({ homeScreenDisplayed: false });
+    };
+  }
+
   changePhoto = (imageSelected, selectedMenuItem) => {
     this.setState({
       imageSelected,
