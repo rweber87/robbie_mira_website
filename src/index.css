@@ -246,7 +246,7 @@ i.big.icon.content {
 }
 
 .outer-ui-form {
-  margin: 3vw 6vw 0vw 6vw;
+  margin: 0vw 6vw 0vw 6vw;
 }
 
 .ui.form {
@@ -404,6 +404,15 @@ div.field.attend {
 
 a.events-href:hover {
   color: #74f6e8 !important;
+}
+
+/* RSVP STYLING PAGE */
+.ui.form .required.field > .checkbox:after,
+.ui.form .required.field > label:after,
+.ui.form .required.fields.grouped > label:after,
+.ui.form .required.fields:not(.grouped) > .field > .checkbox:after,
+.ui.form .required.fields:not(.grouped) > .field > label:after {
+  color: #cf7f24 !important;
 }
 
 @media screen and (max-width: 420px) {
