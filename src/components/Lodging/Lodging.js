@@ -17,8 +17,8 @@ export default function Lodging() {
       <div className='event-gold-date'>Sonnenstraße 18b, 80331 München</div>
       <div className='welcome-text-paragraph-thanks'>
         This hotel offers small kitchenettes in the double room as well as in
-        the 2,3 and 4 room apartments. Ideal for families and people that don’t
-        want to go out for meals every day. The location is super central.
+        the 2, 3, and 4 room apartments. Ideal for families and people that
+        don’t want to go out for meals every day. The location is super central.
       </div>
       <div className='welcome-text-paragraph-thanks'>Prices:</div>
       <div className='welcome-text-paragraph-thanks'>
@@ -36,8 +36,10 @@ export default function Lodging() {
       <div className='welcome-text-paragraph-thanks'>
         000 €/night 4 room apartment (fits up to 8 people)
       </div>
+      <div className='welcome-text-paragraph-thanks'>Booking code: xxx</div>
       <div className='welcome-text-paragraph'>
-        <div>Booking code: xxx</div>
+        (Bookings with this code need to be made by xx.xx.xxxx and the prices
+        apply to the time frame 8.31.2020 - 9.7.2020)
       </div>
       <div className='event-white-date'>
         <a
@@ -50,12 +52,10 @@ export default function Lodging() {
       <div className='event-gold-date'>Am Tucherpark 7, 80538 München</div>
       <div className='welcome-text-paragraph-thanks'>
         This hotel is only a 15 minute walk away from the Seehaus wedding
-        location. Not directly in the center of Munich, but with good connection
-        to the city center via public transport.
+        location. Not directly in the center of Munich, but offers good
+        connections to the city center via public transportation.
       </div>
-      <div className='welcome-text-paragraph-thanks'>
-        Prices: (breakfast included)
-      </div>
+      <div className='welcome-text-paragraph-thanks'>Prices:</div>
       <div className='welcome-text-paragraph-thanks'>
         109 €/ night single room
       </div>
@@ -65,7 +65,7 @@ export default function Lodging() {
       <div className='welcome-text-paragraph-thanks'>Booking code: xxx</div>
       <div className='welcome-text-paragraph-thanks'>
         (Bookings with this code need to be made by xx.xx.xxxx and the prices
-        apply to the time frame 8.31. - 9.7.2020)
+        apply to the time frame 8.31.2020 - 9.7.2020)
       </div>
       <div className='welcome-text-paragraph'>
         There is also a different location of the Hilton in the city center
@@ -94,7 +94,7 @@ export default function Lodging() {
       </div>
       <div className='welcome-text-paragraph'>
         (Bookings with this code need to be made by xx.xx.xxxx and the prices
-        apply to the time frame 8.31. - 9.7.2020)
+        apply to the time frame 8.31.2020 - 9.7.2020)
       </div>
       <div className='event-white-date'>
         <a
