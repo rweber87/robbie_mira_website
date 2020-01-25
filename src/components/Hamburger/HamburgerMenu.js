@@ -31,7 +31,20 @@ export default function HamburgerMenu(props) {
           closerHamburgerMenu();
         }}
       >
-        Welcome
+        WELCOME
+      </Link>
+      <Link
+        className={
+          'menu-item ' +
+          `${selectedMenuItem === 'ceremony' ? 'active' : 'inactive'}`
+        }
+        to='/wedding/ceremony'
+        onClick={() => {
+          changePhoto(images.events, 'ceremony');
+          closerHamburgerMenu();
+        }}
+      >
+        CEREMONY
       </Link>
       <Link
         className={
@@ -44,7 +57,7 @@ export default function HamburgerMenu(props) {
           closerHamburgerMenu();
         }}
       >
-        Events
+        EVENTS
       </Link>
       <Link
         className={
@@ -57,7 +70,7 @@ export default function HamburgerMenu(props) {
           closerHamburgerMenu();
         }}
       >
-        Travel
+        TRAVEL
       </Link>
       <Link
         className={
@@ -70,7 +83,7 @@ export default function HamburgerMenu(props) {
           closerHamburgerMenu();
         }}
       >
-        Lodging
+        LODGING
       </Link>
       <Link
         className={
@@ -78,9 +91,6 @@ export default function HamburgerMenu(props) {
           `${selectedMenuItem === 'rsvp' ? 'active' : 'inactive'}`
         }
         to='/wedding/rsvp'
-        style={{
-          paddingTop: '13px'
-        }}
         onClick={() => {
           changePhoto(images.rsvp, 'rsvp');
           closerHamburgerMenu();
@@ -94,9 +104,6 @@ export default function HamburgerMenu(props) {
           `${selectedMenuItem === 'qanda' ? 'active' : 'inactive'}`
         }
         to='/wedding/qanda'
-        style={{
-          paddingTop: '10px'
-        }}
         onClick={() => {
           changePhoto(images.qanda, 'qanda');
           closerHamburgerMenu();

@@ -38,6 +38,7 @@ class Rsvp extends Component {
       lastName
     } = this.state;
     let envConfirmCode = process.env.REACT_APP_CONFIRM_CODE;
+
     if (
       firstName &&
       lastName &&
@@ -54,7 +55,7 @@ class Rsvp extends Component {
   onSubmit = () => {};
 
   render() {
-    let { firstName, isGoing, isNotGoing } = this.state;
+    let { isGoing, isNotGoing } = this.state;
     let isButtonActive = this.isButtonActive();
 
     return (
@@ -129,6 +130,7 @@ class Rsvp extends Component {
               active={isButtonActive}
               className='submit-button'
               onClick={this.isButtonActive}
+              size={'large'}
             >
               SUBMIT
             </Form.Button>

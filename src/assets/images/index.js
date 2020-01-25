@@ -4,12 +4,19 @@ import image3 from '../images/wedding_img_3.jpg';
 import image4 from '../images/wedding_img_4.jpg';
 import image5 from '../images/wedding_img_5.jpg';
 import image6 from '../images/wedding_img_6.jpg';
+import image7 from '../images/wedding_img_7.jpg';
 
 const images = {
   welcome: {
     image: image1,
     style: {
       backgroundPosition: '50% 25%'
+    }
+  },
+  ceremony: {
+    image: image7,
+    style: {
+      backgroundPosition: '50% 30%'
     }
   },
   events: {
@@ -50,6 +57,8 @@ export function imagesFunction(images, imageSelected) {
   switch (imageSelected) {
     case 'welcome':
       return images.welcome;
+    case 'ceremony':
+      return images.ceremony;
     case 'events':
       return images.events;
     case 'travel':

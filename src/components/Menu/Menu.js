@@ -20,6 +20,16 @@ export function Menu(props) {
         <Link
           className={
             'menu-item ' +
+            `${selectedMenuItem === 'ceremony' ? 'active' : 'inactive'}`
+          }
+          to='/wedding/ceremony'
+          onClick={() => changePhoto(images.ceremony, 'ceremony')}
+        >
+          CEREMONY
+        </Link>
+        <Link
+          className={
+            'menu-item ' +
             `${selectedMenuItem === 'events' ? 'active' : 'inactive'}`
           }
           to='/wedding/events'

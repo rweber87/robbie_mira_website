@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import './App.css';
 
+import Ceremony from './components/Ceremony/Ceremony';
 import Events from './components/Events/Events';
 import HamburgerMenu from './components/Hamburger/HamburgerMenu';
 import HomeScreen from './components/HomeScreen/HomeScreen';
@@ -21,7 +22,7 @@ class App extends Component {
 
     let shouldImageDisplay = window.location.pathname.indexOf('/wedding/') > -1;
     let imageDisplayed = window.location.pathname.split('/wedding/')[1];
-
+    console.log('logging stuff', shouldImageDisplay, imageDisplayed);
     this.state = {
       hamburgerWidth: '0px',
       homeScreenDisplayed: shouldImageDisplay,
@@ -114,6 +115,11 @@ class App extends Component {
                 )}
               />
               <Route exact path='/wedding/welcome' render={() => <Welcome />} />
+              <Route
+                exact
+                path='/wedding/ceremony'
+                render={() => <Ceremony />}
+              />
               <Route exact path='/wedding/events' render={() => <Events />} />
               <Route exact path='/wedding/travel' render={() => <Travel />} />
               <Route exact path='/wedding/lodging' render={() => <Lodging />} />

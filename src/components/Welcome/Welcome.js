@@ -15,9 +15,9 @@ export default function Welcome() {
         {`Thank you so much for making this possible!`} &#10084;
       </div>
       <div className='welcome-text-paragraph'>
-        We recommend that you book your flights and hotels as soon as possible.
         Our website includes a lot of information that will help you plan your
         trip. But if something is missing, please do not hesitate to reach out.
+        We recommend that you book your flights and hotels as soon as possible.
       </div>
       <div className='welcome-rsvp-text'>Step one: RSVP! :-)</div>
       <div className='welcome-text-paragraph'>
