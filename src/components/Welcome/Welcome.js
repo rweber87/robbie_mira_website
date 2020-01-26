@@ -25,6 +25,14 @@ export default function Welcome() {
         the RSVP page and let us know if we can count you in (kindly reply by
         <span className='events-reserve-date'> February 23, 2020</span>)
       </div>
+      <div className='welcome-rsvp-text'>
+        Step two: Check out other to-do’s!
+      </div>
+      <div className='welcome-text-paragraph'>
+        We pre-planned 3 little events for the days leading up to the wedding
+        that might tickle your fancy. Navigate to the ACTIVITIES page for more
+        info! And be sure to let us know if you want us to count you in.
+      </div>
     </div>
   );
 }

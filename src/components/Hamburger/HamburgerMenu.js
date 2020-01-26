@@ -44,7 +44,7 @@ export default function HamburgerMenu(props) {
           closerHamburgerMenu();
         }}
       >
-        CEREMONY
+        THE BIG DAY
       </Link>
       <Link
         className={
@@ -57,7 +57,7 @@ export default function HamburgerMenu(props) {
           closerHamburgerMenu();
         }}
       >
-        EVENTS
+        ACTIVITIES
       </Link>
       <Link
         className={

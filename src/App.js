@@ -22,7 +22,7 @@ class App extends Component {
 
     let shouldImageDisplay = window.location.pathname.indexOf('/wedding/') > -1;
     let imageDisplayed = window.location.pathname.split('/wedding/')[1];
-    console.log('logging stuff', shouldImageDisplay, imageDisplayed);
+
     this.state = {
       hamburgerWidth: '0px',
       homeScreenDisplayed: shouldImageDisplay,

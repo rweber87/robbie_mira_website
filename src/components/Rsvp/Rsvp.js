@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import { Form } from 'semantic-ui-react';
 
+const aws = require('aws-sdk');
+const envConfirmCode = new aws.S3({
+  confirmCode: process.env.REACT_APP_CONFIRM_CODE
+});
+
 class Rsvp extends Component {
   constructor(props) {
     super(props);
@@ -9,6 +14,7 @@ class Rsvp extends Component {
       allergyComments: '',
       confirmCode: '',
       firstName: '',
+      isButtonActive: false,
       isGoing: false,
       isNotGoing: false,
       lastName: ''
@@ -16,14 +22,28 @@ class Rsvp extends Component {
   }
 
   isGoingFunction = () => {
+    const { confirmCode, firstName, lastName } = this.state;
+    let isButtonActive =
+      firstName &&
+      lastName &&
+      confirmCode === envConfirmCode.config.confirmCode;
+
     this.setState({
+      isButtonActive,
       isGoing: true,
       isNotGoing: false
     });
   };
 
   isNotGoingFunction = () => {
+    const { confirmCode, firstName, lastName } = this.state;
+    let isButtonActive =
+      firstName &&
+      lastName &&
+      confirmCode === envConfirmCode.config.confirmCode;
+
     this.setState({
+      isButtonActive,
       isGoing: false,
       isNotGoing: true
     });
@@ -37,26 +57,29 @@ class Rsvp extends Component {
       isNotGoing,
       lastName
     } = this.state;
-    let envConfirmCode = process.env.REACT_APP_CONFIRM_CODE;
 
     if (
       firstName &&
       lastName &&
       (isGoing || isNotGoing) &&
-      confirmCode === envConfirmCode
+      confirmCode === envConfirmCode.config.confirmCode
     ) {
+      this.setState({ isButtonActive: true });
       return true;
     }
+    this.setState({ isButtonActive: false });
     return false;
   };
 
-  handleChange = (e, { name, value }) => this.setState({ [name]: value });
+  handleChange = (e, { name, value }) => {
+    this.setState({ [name]: value });
+  };
 
   onSubmit = () => {};
 
   render() {
-    let { isGoing, isNotGoing } = this.state;
-    let isButtonActive = this.isButtonActive();
+    let { isButtonActive, isGoing, isNotGoing } = this.state;
+    let buttonOpacity = isButtonActive ? '1' : '0.5';
 
     return (
       <div>
@@ -67,7 +90,7 @@ class Rsvp extends Component {
           </div>
         </div>
         <div className='outer-ui-form'>
-          <Form>
+          <Form onBlur={() => this.isButtonActive()}>
             <Form.Group widths='equal'>
               <Form.Input
                 fluid
@@ -127,10 +150,10 @@ class Rsvp extends Component {
               </div>
             )}
             <Form.Button
-              active={isButtonActive}
               className='submit-button'
               onClick={this.isButtonActive}
               size={'large'}
+              style={{ opacity: buttonOpacity }}
             >
               SUBMIT
             </Form.Button>

@@ -25,7 +25,7 @@ export function Menu(props) {
           to='/wedding/ceremony'
           onClick={() => changePhoto(images.ceremony, 'ceremony')}
         >
-          CEREMONY
+          THE BIG DAY
         </Link>
         <Link
           className={
@@ -35,7 +35,7 @@ export function Menu(props) {
           to='/wedding/events'
           onClick={() => changePhoto(images.events, 'events')}
         >
-          EVENTS
+          ACTIVITIES
         </Link>
         <Link
           className={

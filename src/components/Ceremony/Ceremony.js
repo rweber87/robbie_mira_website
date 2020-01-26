@@ -3,7 +3,7 @@ import React from 'react';
 export default function Events() {
   return (
     <div className='welcome-text'>
-      <div className='welcome-header-text'>THE MAIN EVENT</div>
+      <div className='welcome-header-text'>CUZ WE'RE DOING IT. AGAIN!</div>
       <div className='event-white-date'>CEREMONY</div>
       <div className='event-gold-date'>
         <div>Sept 5, 2020 | 4 PM | English Garden, Munich</div>
@@ -27,9 +27,9 @@ export default function Events() {
         </div>
       </div>
       <div className='welcome-text-paragraph-thanks'>
-        After the ceremony, we will walk to the Seehaus (12-minute walk) and get
-        the party started. Be ready to enjoy a delicious dinner and yummy
-        drinks.
+        After the ceremony, we will get the party started at Seehaus located
+        directly by the lake in the middle of the English Garden. Be ready to
+        enjoy a delicious dinner and yummy drinks.
         <div className='welcome-text-paragraph'>
           Don’t forget to bring comfy shoes so we can party all night long!
         </div>

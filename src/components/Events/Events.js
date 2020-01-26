@@ -3,7 +3,7 @@ import React from 'react';
 export default function Events() {
   return (
     <div className='welcome-text'>
-      <div className='welcome-header-text'>OTHER THINGS TO DO</div>
+      <div className='welcome-header-text'>FUN IN MUNICH</div>
       <div className='welcome-text-paragraph-thanks'>
         Munich and the surrounding area offers many great sights and things to
         do. Below you can find 3 pre-planned events happening the week prior to
@@ -22,7 +22,7 @@ export default function Events() {
         <div>THIRD REICH WALKING TOUR THROUGH MUNICH</div>
       </div>
       <div className='event-gold-date'>
-        Sept 1, 2020 | exact time to come | Meeting point Marienplatz, Munich
+        Sept 1, 2020 | Noon-ish (exact time to come)
       </div>
       <div className='welcome-text-paragraph-thanks'>
         Munich comes with a rich history that our friend Chris knows everything
@@ -50,7 +50,7 @@ export default function Events() {
         <div>BIKE TOUR THROUGH MUNICH</div>
       </div>
       <div className='event-gold-date'>
-        Sept 2, 2020 | 12 - 3 PM | Meeting point Marienplatz, Munich
+        Sept 2, 2020 | Noon-ish (exact time to come)
       </div>
       <div className='welcome-text-paragraph-thanks'>
         Our dear friend Kyle is a fantastic tour guide and knows the city and
@@ -63,7 +63,7 @@ export default function Events() {
         (A bit of rain never hurt anybody. But if it is pouring with rain this
         event might get canceled)
       </div>
-      <div className='welcome-text-paragraph-thanks'>Cost: xxx €/Person</div>
+      <div className='welcome-text-paragraph-thanks'>Cost: 24 €/Person</div>
       <div className='welcome-text-paragraph'>
         <div>
           To book a spot on this tour please reach out to us via email by
@@ -87,44 +87,62 @@ export default function Events() {
       </div>
       <div className='welcome-text-paragraph'>
         We will be traveling to Erding together (45 min by train from Munich)
-        and wander around the festival grounds before sitting down for food and
-        drinks and Bavarian celebrations at 5 PM. Last beer is served at 10 PM.
-        You can leave to head back to Munich whenever you’ve had enough.
+        and wander around the festival grounds before sitting down for food,
+        drinks, and Bavarian celebrations around 6 PM. You can head back to
+        Munich whenever you’ve had enough.
       </div>
-      <div className='welcome-text-paragraph-thanks'>Cost: xxx €/Person</div>
+      <div className='welcome-text-paragraph-thanks'>Cost: 30 €/Person</div>
       <div className='welcome-text-paragraph'>
         To reserve a seat with our group please reach out to us via email by
         <span className='events-reserve-date'> April 12, 2020</span> so we can
         make arrangements.
       </div>
       <div className='dotted-line-separator'></div>
-      <div className='welcome-header-text'>MORE THINGS TO DO</div>
-      <div className='event-white-date'>EXPLORE THE ENGLISH GARDEN</div>
-      <div className='welcome-text-paragraph-thanks'>
-        Chinese Tower beer garden
+      <div className='welcome-header-text' style={{ paddingBottom: '3vw' }}>
+        MORE THINGS TO DO
       </div>
-      <div className='welcome-text-paragraph-thanks'>
-        The “Eisbach Welle” where the surfers hang out and ride the waves
+      <div className='event-white-date' style={{ paddingBottom: '3vw' }}>
+        <a
+          className='events-href'
+          href='https://www.tripsavvy.com/english-garden-munich-1520202'
+          rel='noopener noreferrer'
+          style={{
+            color: 'white'
+          }}
+          target='_blank'
+        >
+          EXPLORE THE ENGLISH GARDEN
+        </a>
       </div>
       <div className='welcome-text-paragraph'></div>
-      <div className='event-white-date'>MUNICH'S MUSEUMS</div>
-      <div className='welcome-text-paragraph-thanks'>Residenz Munich</div>
-      <div className='welcome-text-paragraph-thanks'>
-        Alte Pinakothek, Neue Pinakothek or Pinakothek der Moderne
+      <div className='event-white-date' style={{ paddingBottom: '3vw' }}>
+        <a
+          className='events-href'
+          href='http://www.munich-touristinfo.de/museums.htm'
+          rel='noopener noreferrer'
+          style={{
+            color: 'white'
+          }}
+          target='_blank'
+        >
+          MUNICH'S MUSEUMS
+        </a>
       </div>
-      <div className='welcome-text-paragraph-thanks'>Deutsches Museum</div>
-      <div className='welcome-text-paragraph-thanks'>
-        Bier und Oktoberfestmuseum
+      <div className='welcome-text-paragraph'></div>
+      <div className='event-white-date' style={{ paddingBottom: '3vw' }}>
+        <a
+          className='events-href'
+          href='https://www.lonelyplanet.com/germany/munich/attractions/olympiapark/a/poi-sig/1208047/1320849'
+          rel='noopener noreferrer'
+          style={{
+            color: 'white'
+          }}
+          target='_blank'
+        >
+          OLYMPIAPARK
+        </a>
       </div>
-      <div className='welcome-text-paragraph-thanks'>Museum Brandhorst</div>
-      <div className='welcome-text-paragraph-thanks'>BMW Museum/Welt</div>
-      <div className='welcome-text-paragraph-thanks'>
-        Bavarian National Museum
-      </div>
-      <div className='welcome-text-paragraph-thanks'>Glyphothek</div>
-      <div className='welcome-text-paragraph'>
-        State Collection of Egyptian Art
-      </div>
+      <div className='welcome-text-paragraph'></div>
       <div className='event-white-date' style={{ paddingBottom: '3vw' }}>
         <a
           className='events-href'
@@ -186,6 +204,7 @@ export default function Events() {
           By small raft or tube
         </a>
       </div>
+      <div className='welcome-text-paragraph'></div>
       <div className='event-white-date'>TOUR A BREWERY</div>
       <div className='welcome-text-paragraph-thanks'>
         <a
@@ -209,6 +228,7 @@ export default function Events() {
           Hofbräu München
         </a>
       </div>
+      <div className='welcome-text-paragraph'></div>
       <div className='event-white-date'>VISIT THE REAL DISNEY CASTLE ;)</div>
       <div className='welcome-text-paragraph'>
         <a
@@ -222,6 +242,7 @@ export default function Events() {
         </a>{' '}
         has great guides!
       </div>
+      <div className='welcome-text-paragraph'></div>
       <div className='event-white-date' style={{ paddingBottom: '3vw' }}>
         <a
           className='events-href'
