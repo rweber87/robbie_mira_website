@@ -72,7 +72,7 @@ class App extends Component {
           {homeScreenDisplayed && (
             <div className='header'>
               <Photo imageSelected={imageSelected} />
-              {window.innerWidth > 420 ? (
+              {window.innerWidth > 650 ? (
                 <Menu
                   changePhoto={this.changePhoto}
                   images={Images}

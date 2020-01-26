@@ -8,8 +8,8 @@ export default function Events() {
         Munich and the surrounding area offers many great sights and things to
         do. Below you can find 3 pre-planned events happening the week prior to
         our celebration which you can sign up for (find deadlines for signing up
-        below each event) as well as a list of other recommendations of things
-        to do and see).
+        below each event as well as a list of other recommendations of things to
+        do and see).
       </div>
       <div className='welcome-text-paragraph'>
         Side note: This section is mainly for our out-of-town guests. If you are
@@ -43,8 +43,8 @@ export default function Events() {
       </div>
       <div className='welcome-text-paragraph'>
         To book a spot on this tour please reach out to us via email by{' '}
-        <span className='events-reserve-date'>June 5th 2020</span> so we can
-        make arrangements.
+        <span className='events-reserve-date'>June 5, 2020</span> so we can make
+        arrangements.
       </div>
       <div className='event-white-date'>
         <div>BIKE TOUR THROUGH MUNICH</div>
@@ -67,7 +67,7 @@ export default function Events() {
       <div className='welcome-text-paragraph'>
         <div>
           To book a spot on this tour please reach out to us via email by
-          <span className='events-reserve-date'> June 5th 2020 </span>so we can
+          <span className='events-reserve-date'> June 5, 2020 </span>so we can
           make arrangements.
         </div>
       </div>
@@ -77,7 +77,7 @@ export default function Events() {
         </div>
       </div>
       <div className='event-gold-date'>
-        Sept 3, 2020 | afternoon/evening (exact time to come) | Erding
+        Sept 3, 2020 | Afternoon/Evening (exact time to come) | Erding
       </div>
       <div className='welcome-text-paragraph-thanks'>
         Everybody has heard about the legendary Oktoberfest. But not many get

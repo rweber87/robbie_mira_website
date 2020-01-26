@@ -3,10 +3,10 @@ import React from 'react';
 export default function Events() {
   return (
     <div className='welcome-text'>
-      <div className='welcome-header-text'>CUZ WE'RE DOING IT. AGAIN!</div>
+      <div className='welcome-header-text'>WE'RE DOING IT. AGAIN!</div>
       <div className='event-white-date'>CEREMONY</div>
       <div className='event-gold-date'>
-        <div>Sept 5, 2020 | 4 PM | English Garden, Munich</div>
+        <div>Sept 5, 2020 | Afternoon | English Garden, Munich</div>
       </div>
       <div className='welcome-text-paragraph'>
         We picked a special spot in the English Garden to hold our ceremony.
@@ -15,7 +15,7 @@ export default function Events() {
       <div className='event-white-date'>CELEBRATION</div>
       <div className='event-gold-date'>
         <div>
-          Sept 5, 2020 | 6 PM |{' '}
+          Sept 5, 2020 | Evening |{' '}
           <a
             href='https://goo.gl/maps/t1n1QkwV4g3Jgd329'
             rel='noopener noreferrer'
