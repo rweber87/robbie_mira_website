@@ -5,7 +5,7 @@ export default function Events() {
     <div className='welcome-text'>
       <div className='welcome-header-text'>FUN IN MUNICH</div>
       <div className='welcome-text-paragraph-thanks'>
-        Munich and the surrounding area offers many great sights and things to
+        Munich and the surrounding area offer many great sights and things to
         do. Below you can find 3 pre-planned events happening the week prior to
         our celebration which you can sign up for (find deadlines for signing up
         below each event as well as a list of other recommendations of things to
