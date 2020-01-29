@@ -41,7 +41,7 @@ export default function Lodging() {
       </div>
       <div className='welcome-text-paragraph'>
         Prices apply for rooms booked by xx.xx.xxxx and within the time frame of
-        August 31, 2020 - September 7, 2020. There is also a different location
+        August 29, 2020 - September 7, 2020. There is also a different location
         of the Hilton in the city center where you can check for available
         rooms.
       </div>
@@ -82,7 +82,7 @@ export default function Lodging() {
       </div>
       <div className='welcome-text-paragraph'>
         (Bookings with this code need to be made by xx.xx.xxxx and the prices
-        apply to the time frame August 31, 2020 - September 7, 2020)
+        apply to the time frame August 29, 2020 - September 7, 2020)
       </div>
       <div className='event-white-date'>
         <a
