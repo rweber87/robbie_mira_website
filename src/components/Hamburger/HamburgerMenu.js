@@ -36,11 +36,11 @@ export default function HamburgerMenu(props) {
       <Link
         className={
           'menu-item ' +
-          `${selectedMenuItem === 'ceremony' ? 'active' : 'inactive'}`
+          `${selectedMenuItem === 'thebigday' ? 'active' : 'inactive'}`
         }
-        to='/wedding/ceremony'
+        to='/wedding/thebigday'
         onClick={() => {
-          changePhoto(images.events, 'ceremony');
+          changePhoto(images.thebigday, 'thebigday');
           closerHamburgerMenu();
         }}
       >
@@ -49,11 +49,11 @@ export default function HamburgerMenu(props) {
       <Link
         className={
           'menu-item ' +
-          `${selectedMenuItem === 'events' ? 'active' : 'inactive'}`
+          `${selectedMenuItem === 'activities' ? 'active' : 'inactive'}`
         }
-        to='/wedding/events'
+        to='/wedding/activities'
         onClick={() => {
-          changePhoto(images.events, 'events');
+          changePhoto(images.activities, 'activities');
           closerHamburgerMenu();
         }}
       >

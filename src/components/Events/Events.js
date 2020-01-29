@@ -5,16 +5,16 @@ export default function Events() {
     <div className='welcome-text'>
       <div className='welcome-header-text'>FUN IN MUNICH</div>
       <div className='welcome-text-paragraph-thanks'>
-        Munich and the surrounding area offer many great sights and things to
+        Munich and it’s surrounding area offer many great sights and things to
         do. Below you can find 3 pre-planned events happening the week prior to
         our celebration which you can sign up for (find deadlines for signing up
-        below each event as well as a list of other recommendations of things to
-        do and see).
+        below each event) as well as a list of other recommendations of things
+        to do and see.
       </div>
       <div className='welcome-text-paragraph'>
         Side note: This section is mainly for our out-of-town guests. If you are
-        from Munich and wish to join either of the 3 scheduled activities, let
-        us know and we will see if we can make it happen.
+        from Munich and wish to join any of the 3 scheduled activities, let us
+        know and we will see if we can make it happen.
       </div>
       <div className='dotted-line-separator'></div>
       <div className='welcome-header-text'>SIGN UP OPTIONS</div>
@@ -46,6 +46,7 @@ export default function Events() {
         <span className='events-reserve-date'>June 5, 2020</span> so we can make
         arrangements.
       </div>
+      <div className='welcome-text-paragraph'></div>
       <div className='event-white-date'>
         <div>BIKE TOUR THROUGH MUNICH</div>
       </div>
@@ -71,6 +72,7 @@ export default function Events() {
           make arrangements.
         </div>
       </div>
+      <div className='welcome-text-paragraph'> </div>
       <div className='event-white-date'>
         <div>
           TRIP TO THE ERDINGER HERBSTFEST (aka the "better" Oktoberfest)
@@ -93,8 +95,10 @@ export default function Events() {
       </div>
       <div className='welcome-text-paragraph-thanks'>Cost: 30 €/Person</div>
       <div className='welcome-text-paragraph'>
-        To reserve a seat with our group please reach out to us via email by
-        <span className='events-reserve-date'> April 12, 2020</span> so we can
+        Includes two drink vouchers and a meal voucher. Cost may vary depending
+        on your selection. To reserve a seat with our group please reach out to
+        us via email by
+        <span className='events-reserve-date'> June 5, 2020</span> so we can
         make arrangements.
       </div>
       <div className='dotted-line-separator'></div>
@@ -196,7 +200,7 @@ export default function Events() {
       <div className='welcome-text-paragraph'>
         <a
           className='events-href'
-          href='https://www.isarflossfahrten.biz/der-isar-log-rafting-tours/'
+          href='https://www.sport-piraten.de/'
           rel='noopener noreferrer'
           style={{ color: 'white' }}
           target='_blank'
@@ -209,7 +213,7 @@ export default function Events() {
       <div className='welcome-text-paragraph-thanks'>
         <a
           className='events-href'
-          href='https://us.erdinger.de/brewery/brewerytour.htmlhttps://www.mikesbiketours.com/munich/our-tours/castle-tours/neuschwanstein-and-hohenschwangau-day-trip.html'
+          href='https://us.erdinger.de/brewery/brewerytour.html'
           rel='noopener noreferrer'
           style={{ color: 'white' }}
           target='_blank'
@@ -278,7 +282,6 @@ export default function Events() {
           VISIT THE DACHAU CONCENTRATION CAMP
         </a>
       </div>
-      <div className='welcome-text-paragraph'></div>
     </div>
   );
 }

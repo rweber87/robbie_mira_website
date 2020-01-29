@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function Welcome() {
+export default function Welcome({ changePhoto, images }) {
   return (
     <div className='welcome-text'>
       <div className='welcome-header-text'>DEAR FRIENDS AND FAMILY,</div>
@@ -28,8 +28,9 @@ export default function Welcome() {
         Step one:{' '}
         <Link
           className='events-href'
+          onClick={() => changePhoto(images.rsvp, 'rsvp')}
           style={{ color: 'white' }}
-          to='/wedding/welcome'
+          to='/wedding/rsvp'
         >
           RSVP
         </Link>
@@ -45,8 +46,17 @@ export default function Welcome() {
       </div>
       <div className='welcome-text-paragraph'>
         We pre-planned 3 little events for the days leading up to the wedding
-        that might tickle your fancy. Navigate to the ACTIVITIES page for more
-        info! And be sure to let us know if you want us to count you in.
+        that might tickle your fancy. Navigate to the{' '}
+        <Link
+          className='events-href'
+          onClick={() => changePhoto(images.activities, 'activities')}
+          style={{ color: 'white' }}
+          to='/wedding/activities'
+        >
+          ACTIVITIES
+        </Link>{' '}
+        page for more info! And be sure to let us know if you want us to count
+        you in.
       </div>
     </div>
   );

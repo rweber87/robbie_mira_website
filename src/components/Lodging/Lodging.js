@@ -31,19 +31,18 @@ export default function Lodging() {
         transportation.
       </div>
       <div className='welcome-text-paragraph-thanks'>
-        129 €/night single room incl. Breakfast
+        129 €/night single room incl. breakfast
       </div>
       <div className='welcome-text-paragraph-thanks'>
-        141 €/night double room incl. Breakfast
+        141 €/night double room incl. breakfast
       </div>
       <div className='welcome-text-paragraph-thanks code'>
-        Booking code: xxx
+        Booking code: xxx (valid through xx.xx.xxx)
       </div>
       <div className='welcome-text-paragraph'>
-        Prices apply for rooms booked by xx.xx.xxxx and within the time frame of
-        August 29, 2020 - September 7, 2020. There is also a different location
-        of the Hilton in the city center where you can check for available
-        rooms.
+        Prices apply to bookings within the time frame of August 29, 2020 -
+        September 7, 2020. There is also a different location of the Hilton in
+        the city center where you can check for available rooms.
       </div>
       <div className='event-white-date'>
         <a
@@ -63,7 +62,7 @@ export default function Lodging() {
         don’t want to go out for meals every day. The location is super central.
       </div>
       <div className='welcome-text-paragraph-thanks'>
-        000 €/night Double room with kitchenette
+        000 €/night double room with kitchenette
       </div>
       <div className='welcome-text-paragraph-thanks'>
         000 €/night 2 room apartment (fits up to 4 people)
@@ -78,11 +77,11 @@ export default function Lodging() {
         000 €/night 4 room apartment (fits up to 8 people)
       </div>
       <div className='welcome-text-paragraph-thanks code'>
-        Booking code: xxx
+        Booking code: xxx (valid through xx.xx.xxx)
       </div>
       <div className='welcome-text-paragraph'>
-        (Bookings with this code need to be made by xx.xx.xxxx and the prices
-        apply to the time frame August 29, 2020 - September 7, 2020)
+        Prices apply to bookings within the time frame of August 29, 2020 -
+        September 7, 2020.
       </div>
       <div className='event-white-date'>
         <a
@@ -140,7 +139,7 @@ export default function Lodging() {
       <div className='event-gold-date'>Schwanthalerstraße 37, 80336 Munich</div>
       <div className='welcome-text-paragraph'>
         Central location. A bit pricier than the other options but offers things
-        like 24 hour gym access (which I am sure you are all super excited
+        like 24 hour gym access (which we are sure you are all super excited
         about).
       </div>
       <div className='dotted-line-separator'></div>
@@ -177,7 +176,7 @@ export default function Lodging() {
         Or find the place that suits your needs on{' '}
         <a
           className='events-href'
-          href='https://de.airbnb.com/?_set_bev_on_new_domain=1579410702_Gr5EalYK%2Bz8OoDQc'
+          href='https://www.airbnb.com/'
           rel='noopener noreferrer'
           style={{ color: 'white' }}
           target='_blank'

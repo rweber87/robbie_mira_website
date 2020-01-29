@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export function Menu(props) {
   const { changePhoto, images, selectedMenuItem } = props;
-
+  debugger;
   return (
     <div className='menu'>
       <div className='inner-menu'>
@@ -20,20 +20,20 @@ export function Menu(props) {
         <Link
           className={
             'menu-item ' +
-            `${selectedMenuItem === 'ceremony' ? 'active' : 'inactive'}`
+            `${selectedMenuItem === 'thebigday' ? 'active' : 'inactive'}`
           }
-          to='/wedding/ceremony'
-          onClick={() => changePhoto(images.ceremony, 'ceremony')}
+          to='/wedding/thebigday'
+          onClick={() => changePhoto(images.thebigday, 'thebigday')}
         >
           THE BIG DAY
         </Link>
         <Link
           className={
             'menu-item ' +
-            `${selectedMenuItem === 'events' ? 'active' : 'inactive'}`
+            `${selectedMenuItem === 'activities' ? 'active' : 'inactive'}`
           }
-          to='/wedding/events'
-          onClick={() => changePhoto(images.events, 'events')}
+          to='/wedding/activities'
+          onClick={() => changePhoto(images.activities, 'activities')}
         >
           ACTIVITIES
         </Link>

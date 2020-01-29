@@ -85,8 +85,9 @@ class Rsvp extends Component {
       <div>
         <div className='welcome-text' style={{ paddingBottom: 0 }}>
           <div className='welcome-text-paragraph' style={{ paddingBottom: 0 }}>
-            We kindly ask every person planning to attend the wedding to RSVP
-            individually (except the kiddies of course)
+            We kindly ask every person addressed on the invitation to fill out
+            the RSVP form individually. Children are welcome! Please leave us a
+            comment to let us know if you will bring your little ones.
           </div>
         </div>
         <div className='outer-ui-form'>
@@ -142,7 +143,7 @@ class Rsvp extends Component {
                 <Form.Group widths='equal'>
                   <Form.TextArea
                     fluid
-                    label='List any food allergies (if applicable)'
+                    label='Food allergies? Bringing your kids? Other comments? Please put them here!'
                     name='allergyComments'
                     onChange={this.handleChange}
                   />

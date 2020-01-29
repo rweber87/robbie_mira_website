@@ -422,6 +422,30 @@ a.events-href:hover {
   color: #cf7f24 !important;
 }
 
+/* FOOTER STYLING */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: 'JosefinSansLight';
+  font-size: 18px;
+  padding-bottom: 40px;
+}
+
+.dotted-line-separator-footer {
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  border-top: 2px dotted white;
+  padding: 1% 23% 0% 23%;
+  width: 50%;
+}
+
+.welcome-text.footer {
+  padding: 0% 23% 2% 23%;
+}
+
 @media screen and (max-width: 650px) {
   .sidenav {
     height: 100%;

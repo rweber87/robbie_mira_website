@@ -68,7 +68,7 @@ export default function Travel() {
 
       <div className='welcome-text-paragraph-thanks'>
         If you are planning to visit other cities within Germany or Europe by
-        train this
+        train
         <a
           className='events-href'
           href='https://www.bahn.com/en/view/index.shtml'
@@ -77,7 +77,7 @@ export default function Travel() {
           target='_blank'
         >
           {' '}
-          page
+          this page
         </a>{' '}
         is where you'll find what you need.
       </div>

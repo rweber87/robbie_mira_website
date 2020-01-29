@@ -13,13 +13,13 @@ const images = {
       backgroundPosition: '50% 25%'
     }
   },
-  ceremony: {
+  thebigday: {
     image: image7,
     style: {
       backgroundPosition: '50% 30%'
     }
   },
-  events: {
+  activities: {
     image: image2,
     style: {
       backgroundPosition: '50% 35%'
@@ -57,10 +57,10 @@ export function imagesFunction(images, imageSelected) {
   switch (imageSelected) {
     case 'welcome':
       return images.welcome;
-    case 'ceremony':
-      return images.ceremony;
-    case 'events':
-      return images.events;
+    case 'thebigday':
+      return images.thebigday;
+    case 'activities':
+      return images.activities;
     case 'travel':
       return images.travel;
     case 'lodgins':

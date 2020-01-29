@@ -4,6 +4,7 @@ import './App.css';
 
 import Ceremony from './components/Ceremony/Ceremony';
 import Events from './components/Events/Events';
+import Footer from './components/Footer/Footer';
 import HamburgerMenu from './components/Hamburger/HamburgerMenu';
 import HomeScreen from './components/HomeScreen/HomeScreen';
 import Images, { imagesFunction } from './assets/images/';
@@ -114,13 +115,23 @@ class App extends Component {
                   <HomeScreen openHomeScreen={this.openHomeScreen} />
                 )}
               />
-              <Route exact path='/wedding/welcome' render={() => <Welcome />} />
               <Route
                 exact
-                path='/wedding/ceremony'
+                path='/wedding/welcome'
+                render={() => (
+                  <Welcome changePhoto={this.changePhoto} images={Images} />
+                )}
+              />
+              <Route
+                exact
+                path='/wedding/thebigday'
                 render={() => <Ceremony />}
               />
-              <Route exact path='/wedding/events' render={() => <Events />} />
+              <Route
+                exact
+                path='/wedding/activities'
+                render={() => <Events />}
+              />
               <Route exact path='/wedding/travel' render={() => <Travel />} />
               <Route exact path='/wedding/lodging' render={() => <Lodging />} />
               <Route exact path='/wedding/rsvp' render={() => <Rsvp />} />
@@ -128,6 +139,7 @@ class App extends Component {
             </Switch>
           </div>
         </div>
+        <Footer />
       </div>
     );
   }
