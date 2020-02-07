@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 export function Menu(props) {
   const { changePhoto, images, selectedMenuItem } = props;
-  debugger;
   return (
     <div className='menu'>
       <div className='inner-menu'>

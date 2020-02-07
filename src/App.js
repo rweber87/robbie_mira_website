@@ -66,6 +66,7 @@ class App extends Component {
       imageSelected,
       selectedMenuItem
     } = this.state;
+    const { client } = this.props;
 
     return (
       <div>
@@ -134,7 +135,11 @@ class App extends Component {
               />
               <Route exact path='/wedding/travel' render={() => <Travel />} />
               <Route exact path='/wedding/lodging' render={() => <Lodging />} />
-              <Route exact path='/wedding/rsvp' render={() => <Rsvp />} />
+              <Route
+                exact
+                path='/wedding/rsvp'
+                render={() => <Rsvp client={client} />}
+              />
               <Route exact path='/wedding/qanda' render={() => <Qanda />} />
             </Switch>
           </div>

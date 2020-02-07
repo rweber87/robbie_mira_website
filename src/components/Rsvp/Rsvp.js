@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import { Form } from 'semantic-ui-react';
+import gql from 'graphql-tag';
+
+import { compileDataToSave } from './util';
+import addResponseMutation from '../../grapql/mutations/addResponse.js';
 
 const aws = require('aws-sdk');
 const envConfirmCode = new aws.S3({
@@ -49,6 +53,30 @@ class Rsvp extends Component {
     });
   };
 
+  onFormSubmit = async () => {
+    const { client } = this.props;
+    try {
+      const response = await client.mutate({
+        mutation: addResponseMutation,
+        variables: compileDataToSave(this.state)
+      });
+      if (response.data.addResponse) {
+        this.setState({
+          allergyComments: '',
+          confirmCode: '',
+          firstName: '',
+          isButtonActive: false,
+          isGoing: false,
+          isNotGoing: false,
+          lastName: ''
+        });
+      }
+    } catch (e) {
+      console.log('logging error', e);
+      return e;
+    }
+  };
+
   isButtonActive = () => {
     const {
       confirmCode,
@@ -91,7 +119,10 @@ class Rsvp extends Component {
           </div>
         </div>
         <div className='outer-ui-form'>
-          <Form onBlur={() => this.isButtonActive()}>
+          <Form
+            onBlur={() => this.isButtonActive()}
+            onSubmit={async () => await this.onFormSubmit()}
+          >
             <Form.Group widths='equal'>
               <Form.Input
                 fluid
@@ -152,7 +183,6 @@ class Rsvp extends Component {
             )}
             <Form.Button
               className='submit-button'
-              onClick={this.isButtonActive}
               size={'large'}
               style={{ opacity: buttonOpacity }}
             >
