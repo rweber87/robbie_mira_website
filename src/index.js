@@ -8,7 +8,7 @@ import 'semantic-ui-css/semantic.min.css';
 import App from './App';
 
 const aws = require('aws-sdk');
-const API = new aws.S3({
+const API_URL = new aws.S3({
   api: process.env.api
 });
 
