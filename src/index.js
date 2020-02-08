@@ -12,8 +12,8 @@ const API_URL = new aws.S3({
   api: process.env.api
 });
 
-const client = new ApolloClient({ uri: `${API_URL.config.api}/graphql` });
-console.log('API_URL', API_URL);
+const client = new ApolloClient({ uri: `${process.env.api}/graphql` });
+console.log('API_URL', process.env);
 ReactDOM.render(
   <ApolloProvider client={client}>
     <Router>
