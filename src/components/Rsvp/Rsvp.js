@@ -129,7 +129,7 @@ class Rsvp extends Component {
       lastName
     } = this.state;
     let buttonOpacity = isButtonActive ? '1' : '0.5';
-    console.log(isNotGoing, isNotGoingMessage);
+
     return (
       <div>
         <div className='welcome-text' style={{ paddingBottom: 0 }}>
