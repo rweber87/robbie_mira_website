@@ -12,7 +12,7 @@ const API_URL = new aws.S3({
   api: process.env.api
 });
 
-const client = new ApolloClient({ uri: `${process.env.api}/graphql` });
+const client = new ApolloClient({ uri: `${process.env.API_URL}/graphql` });
 console.log('API_URL', process.env);
 ReactDOM.render(
   <ApolloProvider client={client}>
