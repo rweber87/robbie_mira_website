@@ -59,6 +59,7 @@ class Rsvp extends Component {
 
   onFormSubmit = async e => {
     const { client } = this.props;
+    console.log(client);
     if (this.isButtonActive()) {
       try {
         const response = await client.mutate({
