@@ -30,6 +30,7 @@ export default function HomeScreen(props) {
               2020
             </div>
           </div>
+          <div className='std-subtext'>(tap to enter)</div>
         </div>
       </Link>
     </div>

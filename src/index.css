@@ -51,6 +51,16 @@ body {
   font-family: 'JosefinSansBold';
 }
 
+.std-subtext {
+  display: flex;
+  color: white;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3vw;
+  font-family: 'JosefinSansRegular';
+}
+
 .std-subheader {
   display: flex;
   margin-top: 20px;

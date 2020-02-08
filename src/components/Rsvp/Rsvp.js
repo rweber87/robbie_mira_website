@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Form } from 'semantic-ui-react';
-import gql from 'graphql-tag';
+import { Form, Message } from 'semantic-ui-react';
 
 import { compileDataToSave } from './util';
 import addResponseMutation from '../../grapql/mutations/addResponse.js';
@@ -17,10 +16,13 @@ class Rsvp extends Component {
     this.state = {
       allergyComments: '',
       confirmCode: '',
+      displayMessage: false,
+      email: '',
       firstName: '',
       isButtonActive: false,
       isGoing: false,
       isNotGoing: false,
+      isNotGoingMessage: false,
       lastName: ''
     };
   }
@@ -49,37 +51,45 @@ class Rsvp extends Component {
     this.setState({
       isButtonActive,
       isGoing: false,
-      isNotGoing: true
+      isNotGoing: true,
+      isNotGoingMessage: true
     });
+    setTimeout(() => this.setState({ isNotGoingMessage: false }), 5000);
   };
 
-  onFormSubmit = async () => {
+  onFormSubmit = async e => {
     const { client } = this.props;
-    try {
-      const response = await client.mutate({
-        mutation: addResponseMutation,
-        variables: compileDataToSave(this.state)
-      });
-      if (response.data.addResponse) {
-        this.setState({
-          allergyComments: '',
-          confirmCode: '',
-          firstName: '',
-          isButtonActive: false,
-          isGoing: false,
-          isNotGoing: false,
-          lastName: ''
+    if (this.isButtonActive()) {
+      try {
+        const response = await client.mutate({
+          mutation: addResponseMutation,
+          variables: compileDataToSave(this.state)
         });
+        if (response.data.addResponse) {
+          this.setState({
+            allergyComments: '',
+            confirmCode: '',
+            displayMessage: true,
+            email: '',
+            firstName: '',
+            isButtonActive: false,
+            isGoing: false,
+            isNotGoing: false,
+            lastName: ''
+          });
+        }
+        setTimeout(() => this.setState({ displayMessage: false }), 5000);
+      } catch (e) {
+        console.log('logging error', e);
+        return e;
       }
-    } catch (e) {
-      console.log('logging error', e);
-      return e;
     }
   };
 
   isButtonActive = () => {
     const {
       confirmCode,
+      email,
       firstName,
       isGoing,
       isNotGoing,
@@ -89,13 +99,14 @@ class Rsvp extends Component {
     if (
       firstName &&
       lastName &&
+      email &&
       (isGoing || isNotGoing) &&
       confirmCode === envConfirmCode.config.confirmCode
     ) {
-      this.setState({ isButtonActive: true });
+      this.setState({ displayMessage: false, isButtonActive: true });
       return true;
     }
-    this.setState({ isButtonActive: false });
+    this.setState({ displayMessage: false, isButtonActive: false });
     return false;
   };
 
@@ -103,25 +114,36 @@ class Rsvp extends Component {
     this.setState({ [name]: value });
   };
 
-  onSubmit = () => {};
-
   render() {
-    let { isButtonActive, isGoing, isNotGoing } = this.state;
+    let {
+      allergyComments,
+      confirmCode,
+      displayMessage,
+      email,
+      firstName,
+      isButtonActive,
+      isGoing,
+      isNotGoing,
+      isNotGoingMessage,
+      lastName
+    } = this.state;
     let buttonOpacity = isButtonActive ? '1' : '0.5';
-
+    console.log(isNotGoing, isNotGoingMessage);
     return (
       <div>
         <div className='welcome-text' style={{ paddingBottom: 0 }}>
           <div className='welcome-text-paragraph' style={{ paddingBottom: 0 }}>
             We kindly ask every person addressed on the invitation to fill out
-            the RSVP form individually. Children are welcome! Please leave us a
-            comment to let us know if you will bring your little ones.
+            the RSVP form individually by March 10, 2020. Children are welcome!
+            Please leave us a comment to let us know if you plan to bring your
+            little ones.
           </div>
         </div>
         <div className='outer-ui-form'>
           <Form
             onBlur={() => this.isButtonActive()}
-            onSubmit={async () => await this.onFormSubmit()}
+            onSubmit={async e => await this.onFormSubmit(e)}
+            success
           >
             <Form.Group widths='equal'>
               <Form.Input
@@ -129,6 +151,7 @@ class Rsvp extends Component {
                 required
                 label='First name'
                 name='firstName'
+                value={firstName}
                 onChange={this.handleChange}
               />
               <Form.Input
@@ -136,7 +159,19 @@ class Rsvp extends Component {
                 required
                 label='Last name'
                 name='lastName'
+                value={lastName}
                 onChange={this.handleChange}
+              />
+            </Form.Group>
+            <Form.Group>
+              <Form.Input
+                fluid
+                required
+                label='Email'
+                name='email'
+                value={email}
+                onChange={this.handleChange}
+                width={8}
               />
             </Form.Group>
             <Form.Group>
@@ -145,6 +180,7 @@ class Rsvp extends Component {
                 required
                 label='RSVP Code (can be found on your invitation)'
                 name='confirmCode'
+                value={confirmCode}
                 onChange={this.handleChange}
                 width={8}
               />
@@ -169,17 +205,27 @@ class Rsvp extends Component {
                 onChange={this.isNotGoingFunction}
               />
             </Form.Group>
-            {isGoing && (
-              <div>
-                <Form.Group widths='equal'>
-                  <Form.TextArea
-                    fluid
-                    label='Food allergies? Bringing your kids? Other comments? Please put them here!'
-                    name='allergyComments'
-                    onChange={this.handleChange}
-                  />
-                </Form.Group>
-              </div>
+            {isNotGoing && isNotGoingMessage && (
+              <Message
+                header="Well that's a bummer!"
+                content="We're bummed you won't be there but we'll be sure to share pictures of the day!"
+              />
+            )}
+            <Form.Group widths='equal'>
+              <Form.TextArea
+                fluid
+                label='Food allergies? Bringing your kids? Other comments? Please put them here!'
+                name='allergyComments'
+                onChange={this.handleChange}
+                value={allergyComments}
+              />
+            </Form.Group>
+            {displayMessage && (
+              <Message
+                success
+                header='HOORAY!'
+                content="Thank you for RSVP'ing to our wedding :D"
+              />
             )}
             <Form.Button
               className='submit-button'

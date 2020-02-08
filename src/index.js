@@ -7,7 +7,14 @@ import './index.css';
 import 'semantic-ui-css/semantic.min.css';
 import App from './App';
 
-const client = new ApolloClient({ uri: 'http://localhost:4000/graphql' });
+const aws = require('aws-sdk');
+const API = new aws.S3({
+  api: process.env.api
+});
+
+const client = new ApolloClient({
+  uri: `${envConfirmCode.config.api}/graphql`
+});
 
 ReactDOM.render(
   <ApolloProvider client={client}>

@@ -39,7 +39,7 @@ export default function Welcome({ changePhoto, images }) {
       <div className='welcome-text-paragraph'>
         For our preparations, we need a headcount. Please be sure to navigate to
         the RSVP page and let us know if we can count you in (kindly reply by
-        <span className='events-reserve-date'> February 23, 2020</span>)
+        <span className='events-reserve-date'> March 10, 2020</span>)
       </div>
       <div className='welcome-rsvp-text'>
         Step two: Sign up for pre-wedding activities!
