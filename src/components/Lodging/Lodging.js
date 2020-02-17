@@ -201,7 +201,7 @@ export default function Lodging() {
           style={{ color: 'white' }}
           target='_blank'
         >
-          airBnB.
+          Airbnb.
         </a>
       </div>
     </div>

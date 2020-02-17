@@ -136,8 +136,6 @@ class Rsvp extends Component {
           <div className='welcome-text-paragraph-thanks'>
             We kindly ask every person addressed on the invitation to fill out
             the RSVP form individually by{' '}
-          </div>
-          <div className='welcome-text-paragraph-thanks'>
             <span className='events-reserve-date'>March 10, 2020.</span>
           </div>
           <div className='welcome-text-paragraph-thanks'>
@@ -180,7 +178,7 @@ class Rsvp extends Component {
                 width={8}
               />
             </Form.Group>
-            <Form.Group>
+            <Form.Group className='rsvp-input'>
               <Form.Input
                 fluid
                 required
@@ -191,7 +189,7 @@ class Rsvp extends Component {
                 width={8}
               />
             </Form.Group>
-            <Form.Group>
+            <Form.Group className='food-input'>
               <Form.Field
                 required
                 className='attend'
@@ -217,7 +215,7 @@ class Rsvp extends Component {
                 content="We're bummed you won't be there but we'll be sure to share pictures of the day!"
               />
             )}
-            <Form.Group widths='equal'>
+            <Form.Group className='food-input' widths='equal'>
               <Form.TextArea
                 fluid
                 label='Food allergies? Bringing your kids? Other comments? Please put them here!'

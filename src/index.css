@@ -119,11 +119,10 @@ body {
   width: 31vw;
 }
 
-#main-body {
-  background-image: url('../src/assets/images/2_t.png');
+/* #main-body {
+  background-image: url('../src/assets/images/2_Kopie_NEW.png');
   background-repeat: no-repeat;
-  background-size: 1400px;
-}
+} */
 
 .location {
   font-family: 'JosefinSansLight';
@@ -374,7 +373,7 @@ div.field.attend {
 }
 
 .welcome-rsvp-text {
-  font-size: 20px;
+  font-size: 25px;
   font-family: 'JosefinSansbold';
   font-weight: bold;
   padding-bottom: 3vw;
@@ -505,6 +504,7 @@ a.events-href:hover {
   a.menu-item {
     color: white;
     font-family: 'JosefinSlabSemiBold';
+    white-space: nowrap;
   }
 
   a.menu-item.active {
@@ -596,11 +596,12 @@ a.events-href:hover {
   }
 
   .welcome-rsvp-text {
-    font-size: 25px;
+    font-size: 22px;
     font-family: 'JosefinSansbold';
     font-weight: bold;
     padding-bottom: 10vw;
     letter-spacing: 1px;
+    line-height: 35px;
   }
 
   .welcome-text-paragraph {
@@ -616,5 +617,24 @@ a.events-href:hover {
 
   .dotted-line-separator {
     padding-bottom: 18vw;
+  }
+
+  .fields.rsvp-input {
+    padding-top: 15px;
+    line-height: 25px;
+  }
+
+  .fields.food-input {
+    line-height: 25px;
+  }
+
+  /* FOOTER SECTION */
+
+  .footer {
+    padding-top: 20px;
+  }
+
+  .welcome-text.footer {
+    padding-top: 20px;
   }
 }
