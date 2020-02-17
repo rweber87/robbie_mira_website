@@ -133,11 +133,16 @@ class Rsvp extends Component {
     return (
       <div>
         <div className='welcome-text' style={{ paddingBottom: 0 }}>
-          <div className='welcome-text-paragraph' style={{ paddingBottom: 0 }}>
+          <div className='welcome-text-paragraph-thanks'>
             We kindly ask every person addressed on the invitation to fill out
-            the RSVP form individually by March 10, 2020. Children are welcome!
-            Please leave us a comment to let us know if you plan to bring your
-            little ones.
+            the RSVP form individually by{' '}
+          </div>
+          <div className='welcome-text-paragraph-thanks'>
+            <span className='events-reserve-date'>March 10, 2020.</span>
+          </div>
+          <div className='welcome-text-paragraph-thanks'>
+            Children are welcome! Please leave us a comment to let us know if
+            you plan to bring your little ones.
           </div>
         </div>
         <div className='outer-ui-form'>

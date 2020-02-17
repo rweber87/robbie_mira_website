@@ -4,7 +4,7 @@ export default function Lodging() {
   return (
     <div className='welcome-text'>
       <div className='welcome-header-text'>HOTELS</div>
-      <div className='welcome-text-paragraph'>
+      <div className='welcome-text-paragraph-thanks'>
         For you non-european folk, room sizes and bed sizes can be different
         than what you are accustomed. Please ensure the room you book adequately
         fits all your needs.
@@ -12,6 +12,7 @@ export default function Lodging() {
       <div className='welcome-text-paragraph'>
         We strongly encourage you to book your hotel rooms as soon as possible.
       </div>
+      <div className='welcome-text-paragraph'></div>
       <div className='event-white-date'>
         <a
           className='events-href'
@@ -24,11 +25,17 @@ export default function Lodging() {
         </a>
       </div>
       <div className='event-gold-date'>Am Tucherpark 7, 80538 Munich</div>
-      <div className='welcome-text-paragraph-thanks'>
+      <div className='welcome-text-paragraph'>
         This hotel is only a 12 minute walk away from the Seehaus wedding
         location which is great for the party!! It is not as central as other
-        hotels but has good connection to the city center via public
+        hotels but has good connections to the city center via public
         transportation.
+      </div>
+      <div className='welcome-text-paragraph-thanks'>
+        Prices apply to bookings within the time frame of{' '}
+        <span className='events-reserve-date'>
+          August 29, 2020 - September 7, 2020.
+        </span>
       </div>
       <div className='welcome-text-paragraph-thanks'>
         129 €/night single room incl. breakfast
@@ -37,13 +44,14 @@ export default function Lodging() {
         141 €/night double room incl. breakfast
       </div>
       <div className='welcome-text-paragraph-thanks code'>
-        Booking code: xxx (valid through xx.xx.xxx)
+        Booking code: Robbie and Mira (valid through June 20, 2020)
       </div>
+      <div className='welcome-text-paragraph'></div>
       <div className='welcome-text-paragraph'>
-        Prices apply to bookings within the time frame of August 29, 2020 -
-        September 7, 2020. There is also a different location of the Hilton in
-        the city center where you can check for available rooms.
+        There is also a different location of the Hilton in the city center
+        where you can check for available rooms.
       </div>
+      <div className='welcome-text-paragraph'></div>
       <div className='event-white-date'>
         <a
           className='events-href'
@@ -56,33 +64,42 @@ export default function Lodging() {
         </a>
       </div>
       <div className='event-gold-date'>Sonnenstraße 18b, 80331 München</div>
-      <div className='welcome-text-paragraph-thanks'>
+      <div className='welcome-text-paragraph'>
         This hotel offers small kitchenettes in the double room as well as in
         the 2, 3, and 4 room apartments. Ideal for families and people that
-        don’t want to go out for meals every day. The location is super central.
+        don’t want to go out for meals every day. Breakfast is optional for an
+        additional 10 €/person. The location is super central.
       </div>
       <div className='welcome-text-paragraph-thanks'>
-        000 €/night double room with kitchenette
+        Prices apply to bookings within the time frame of{' '}
+        <span className='events-reserve-date'>
+          August 29, 2020 - September 7, 2020.
+        </span>
       </div>
       <div className='welcome-text-paragraph-thanks'>
-        000 €/night 2 room apartment (fits up to 4 people)
-      </div>
-      <div className='welcome-text-paragraph-thanks'>
-        000 €/night 3 room apartment (fits up to 6 people)
-      </div>
-      <div className='welcome-text-paragraph-thanks'>
-        000 €/night 3 room apartment (fits up to 6 people)
-      </div>
-      <div className='welcome-text-paragraph-thanks'>
-        000 €/night 4 room apartment (fits up to 8 people)
-      </div>
-      <div className='welcome-text-paragraph-thanks code'>
-        Booking code: xxx (valid through xx.xx.xxx)
+        129 €/night double room with kitchenette
       </div>
       <div className='welcome-text-paragraph'>
-        Prices apply to bookings within the time frame of August 29, 2020 -
-        September 7, 2020.
+        199 €/night 2 room apartment (fits up to 4 people)
       </div>
+      <div className='welcome-text-paragraph-thanks'>
+        Prices apply to bookings within the time frame of{' '}
+        <span className='events-reserve-date'>
+          August 31, 2020 - September 7, 2020.
+        </span>
+      </div>
+      <div className='welcome-text-paragraph-thanks'>
+        259 €/night 3 room apartment (fits up to 6 people)
+      </div>
+      <div className='welcome-text-paragraph'>
+        299 €/night 4 room apartment (fits up to 8 people)
+      </div>
+      <div className='welcome-text-paragraph-thanks code'>
+        To book please contact Anna Taferner via email at at@n0t.net by March
+        26, 2020.
+      </div>
+      <div className='welcome-text-paragraph'></div>
+      <div className='welcome-text-paragraph'></div>
       <div className='event-white-date'>
         <a
           className='events-href'
@@ -109,6 +126,7 @@ export default function Lodging() {
           restaurants!
         </a>
       </div>
+      <div className='welcome-text-paragraph'></div>
       <div className='event-white-date'>
         <a
           className='events-href'
@@ -125,6 +143,7 @@ export default function Lodging() {
         cheaper prices and clean design. However, the rooms will likely not be
         the most spacious ones.
       </div>
+      <div className='welcome-text-paragraph'></div>
       <div className='event-white-date'>
         <a
           className='events-href'
@@ -156,6 +175,7 @@ export default function Lodging() {
         </a>
       </div>
       <div className='event-gold-date'>Senefelderstraße 5, 80336 München</div>
+      <div className='welcome-text-paragraph'></div>
       <div className='welcome-text-paragraph'></div>
       <div className='event-white-date'>
         <a

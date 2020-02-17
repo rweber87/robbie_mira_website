@@ -6,6 +6,12 @@ import LandingImgMobile from '../../assets/images/landing_page_img_3.jpg';
 
 export default function HomeScreen(props) {
   const { openHomeScreen } = props;
+  let tapToEnter = () => {
+    if (window.innerWidth < 650) {
+      return <div className='std-subtext'>(tap to enter)</div>;
+    }
+  };
+
   return (
     <div>
       <Link to='/wedding/welcome' onClick={() => openHomeScreen()}>
@@ -30,7 +36,7 @@ export default function HomeScreen(props) {
               2020
             </div>
           </div>
-          <div className='std-subtext'>(tap to enter)</div>
+          {tapToEnter()}
         </div>
       </Link>
     </div>

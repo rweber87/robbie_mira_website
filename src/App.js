@@ -69,7 +69,7 @@ class App extends Component {
     const { client } = this.props;
 
     return (
-      <div>
+      <div id='main-body'>
         <div>
           {homeScreenDisplayed && (
             <div className='header'>
@@ -143,8 +143,8 @@ class App extends Component {
               <Route exact path='/wedding/qanda' render={() => <Qanda />} />
             </Switch>
           </div>
+          <Footer />
         </div>
-        <Footer />
       </div>
     );
   }

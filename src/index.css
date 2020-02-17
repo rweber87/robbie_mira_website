@@ -52,9 +52,9 @@ body {
 }
 
 .std-subtext {
+  padding-top: 75vh;
   display: flex;
   color: white;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
   font-size: 3vw;
@@ -117,6 +117,12 @@ body {
 .bottom-border-line {
   border-bottom: 1px dotted #bbb082;
   width: 31vw;
+}
+
+#main-body {
+  background-image: url('../src/assets/images/2_t.png');
+  background-repeat: no-repeat;
+  background-size: 1400px;
 }
 
 .location {
@@ -441,6 +447,11 @@ a.events-href:hover {
   font-family: 'JosefinSansLight';
   font-size: 18px;
   padding-bottom: 40px;
+}
+
+.footer-email {
+  color: white;
+  font-family: 'JosefinSansLight';
 }
 
 .dotted-line-separator-footer {
