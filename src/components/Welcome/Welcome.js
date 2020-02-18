@@ -56,7 +56,7 @@ export default function Welcome({ changePhoto, images }) {
           ACTIVITIES
         </Link>{' '}
         page for more info! And be sure to let us know if you want us to count
-        you in.
+        you in. Des werd a Gaudi!
       </div>
     </div>
   );

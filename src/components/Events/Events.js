@@ -61,8 +61,8 @@ export default function Events() {
         provided, but it would be good if you knew how to ride one{` ;-)`}
       </div>
       <div className='welcome-text-paragraph'>
-        (A bit of rain never hurt anybody. But if it is pouring with rain this
-        event might get canceled)
+        (A bit of rain never hurt anybody. Wir sind ja nicht aus Zucker. But if
+        it is pouring with rain this event might get canceled)
       </div>
       <div className='welcome-text-paragraph-thanks'>Cost: 24 €/Person</div>
       <div className='welcome-text-paragraph'>
@@ -90,8 +90,8 @@ export default function Events() {
       <div className='welcome-text-paragraph'>
         We will be traveling to Erding together (45 min by train from Munich)
         and wander around the festival grounds before sitting down for food,
-        drinks, and Bavarian celebrations around 6 PM. You can head back to
-        Munich whenever you’ve had enough.
+        drinks, and Bavarian celebrations around 6 PM. Ozapft is! You can head
+        back to Munich whenever you’ve had enough.
       </div>
       <div className='welcome-text-paragraph-thanks'>Cost: 30 €/Person</div>
       <div className='welcome-text-paragraph'>
