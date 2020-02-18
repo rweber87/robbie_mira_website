@@ -11,7 +11,7 @@ export function Menu(props) {
             'menu-item ' +
             `${selectedMenuItem === 'welcome' ? 'active' : 'inactive'}`
           }
-          to='/wedding/welcome'
+          to='/welcome'
           onClick={() => changePhoto(images.welcome, 'welcome')}
         >
           WELCOME
@@ -21,7 +21,7 @@ export function Menu(props) {
             'menu-item ' +
             `${selectedMenuItem === 'thebigday' ? 'active' : 'inactive'}`
           }
-          to='/wedding/thebigday'
+          to='/thebigday'
           onClick={() => changePhoto(images.thebigday, 'thebigday')}
         >
           THE BIG DAY
@@ -31,7 +31,7 @@ export function Menu(props) {
             'menu-item ' +
             `${selectedMenuItem === 'activities' ? 'active' : 'inactive'}`
           }
-          to='/wedding/activities'
+          to='/activities'
           onClick={() => changePhoto(images.activities, 'activities')}
         >
           ACTIVITIES
@@ -41,7 +41,7 @@ export function Menu(props) {
             'menu-item ' +
             `${selectedMenuItem === 'travel' ? 'active' : 'inactive'}`
           }
-          to='/wedding/travel'
+          to='/travel'
           onClick={() => changePhoto(images.travel, 'travel')}
         >
           TRAVEL
@@ -51,7 +51,7 @@ export function Menu(props) {
             'menu-item ' +
             `${selectedMenuItem === 'lodging' ? 'active' : 'inactive'}`
           }
-          to='/wedding/lodging'
+          to='/lodging'
           onClick={() => changePhoto(images.lodging, 'lodging')}
         >
           LODGING
@@ -61,7 +61,7 @@ export function Menu(props) {
             'menu-item ' +
             `${selectedMenuItem === 'rsvp' ? 'active' : 'inactive'}`
           }
-          to='/wedding/rsvp'
+          to='/rsvp'
           onClick={() => changePhoto(images.rsvp, 'rsvp')}
         >
           RSVP
@@ -71,7 +71,7 @@ export function Menu(props) {
             'menu-item ' +
             `${selectedMenuItem === 'qanda' ? 'active' : 'inactive'}`
           }
-          to='/wedding/qanda'
+          to='/qanda'
           onClick={() => changePhoto(images.qanda, 'qanda')}
         >
           Q & A

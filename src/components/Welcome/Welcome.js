@@ -30,7 +30,7 @@ export default function Welcome({ changePhoto, images }) {
           className='events-href'
           onClick={() => changePhoto(images.rsvp, 'rsvp')}
           style={{ color: 'white' }}
-          to='/wedding/rsvp'
+          to='/rsvp'
         >
           RSVP
         </Link>
@@ -51,7 +51,7 @@ export default function Welcome({ changePhoto, images }) {
           className='events-href'
           onClick={() => changePhoto(images.activities, 'activities')}
           style={{ color: 'white' }}
-          to='/wedding/activities'
+          to='/activities'
         >
           ACTIVITIES
         </Link>{' '}

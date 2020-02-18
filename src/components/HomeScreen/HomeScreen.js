@@ -14,7 +14,7 @@ export default function HomeScreen(props) {
 
   return (
     <div>
-      <Link to='/wedding/welcome' onClick={() => openHomeScreen()}>
+      <Link to='/welcome' onClick={() => openHomeScreen()}>
         <img
           alt=''
           src={window.innerWidth > 650 ? LandingImg : LandingImgMobile}

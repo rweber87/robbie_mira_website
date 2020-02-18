@@ -21,22 +21,16 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    let shouldImageDisplay = window.location.pathname.indexOf('/wedding/') > -1;
-    let imageDisplayed = window.location.pathname.split('/wedding/')[1];
+    let shouldImageDisplay = window.location.pathname.split('/')[1]
+      ? true
+      : false;
+    let imageDisplayed = window.location.pathname.split('/')[1];
 
     this.state = {
       hamburgerWidth: '0px',
       homeScreenDisplayed: shouldImageDisplay,
       imageSelected: imagesFunction(Images, imageDisplayed),
       selectedMenuItem: imageDisplayed ? imageDisplayed : 'welcome'
-    };
-  }
-
-  componentDidUpdate() {
-    window.onpopstate = e => {
-      e.srcElement.location.href.includes('/wedding/')
-        ? this.setState({ homeScreenDisplayed: true })
-        : this.setState({ homeScreenDisplayed: false });
     };
   }
 
@@ -108,39 +102,31 @@ class App extends Component {
           )}
           <div>
             <Switch>
-              <Route exact path='/' render={() => <SaveTheDate />} />
+              {/* <Route exact path='/' render={() => <SaveTheDate />} /> */}
               <Route
                 exact
-                path='/wedding'
+                path='/'
                 render={() => (
                   <HomeScreen openHomeScreen={this.openHomeScreen} />
                 )}
               />
               <Route
                 exact
-                path='/wedding/welcome'
+                path='/welcome'
                 render={() => (
                   <Welcome changePhoto={this.changePhoto} images={Images} />
                 )}
               />
+              <Route exact path='/thebigday' render={() => <Ceremony />} />
+              <Route exact path='/activities' render={() => <Events />} />
+              <Route exact path='/travel' render={() => <Travel />} />
+              <Route exact path='/lodging' render={() => <Lodging />} />
               <Route
                 exact
-                path='/wedding/thebigday'
-                render={() => <Ceremony />}
-              />
-              <Route
-                exact
-                path='/wedding/activities'
-                render={() => <Events />}
-              />
-              <Route exact path='/wedding/travel' render={() => <Travel />} />
-              <Route exact path='/wedding/lodging' render={() => <Lodging />} />
-              <Route
-                exact
-                path='/wedding/rsvp'
+                path='/rsvp'
                 render={() => <Rsvp client={client} />}
               />
-              <Route exact path='/wedding/qanda' render={() => <Qanda />} />
+              <Route exact path='/qanda' render={() => <Qanda />} />
             </Switch>
           </div>
           <Footer />
