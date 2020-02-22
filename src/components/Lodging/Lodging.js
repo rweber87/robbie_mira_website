@@ -21,7 +21,7 @@ export default function Lodging() {
           style={{ color: 'white' }}
           target='_blank'
         >
-          HILTON MUNICH CITY
+          HILTON MUNICH PARK
         </a>
       </div>
       <div className='event-gold-date'>Am Tucherpark 7, 80538 Munich</div>
@@ -44,7 +44,7 @@ export default function Lodging() {
         141 €/night double room incl. breakfast
       </div>
       <div className='welcome-text-paragraph-thanks code'>
-        Booking code: Robbie and Mira (valid through June 20, 2020)
+        {`Booking code: Robbie & Mira (valid through June 20, 2020)`}
       </div>
       <div className='welcome-text-paragraph'></div>
       <div className='welcome-text-paragraph'>
