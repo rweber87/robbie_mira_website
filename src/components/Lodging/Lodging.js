@@ -46,6 +46,19 @@ export default function Lodging() {
       <div className='welcome-text-paragraph-thanks code'>
         {`Booking code: Robbie & Mira (valid through June 20, 2020)`}
       </div>
+      <div className='welcome-text-paragraph-thanks'>
+        Click{' '}
+        <a
+          className='events-href'
+          href='https://secure3.hilton.com/en_US/hi/reservation/book.htm?execution=e1s1'
+          rel='noopener noreferrer'
+          style={{ color: 'white' }}
+          target='_blank'
+        >
+          here
+        </a>{' '}
+        to book
+      </div>
       <div className='welcome-text-paragraph'></div>
       <div className='welcome-text-paragraph'>
         There is also a different location of the Hilton in the city center
