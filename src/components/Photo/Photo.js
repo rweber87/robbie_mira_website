@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function Photo(props) {
   const { imageSelected } = props;
 
@@ -8,7 +6,7 @@ export default function Photo(props) {
       className='photo-image'
       style={{
         width: '100%',
-        maxHeight: '350px'
+        maxHeight: '350px',
       }}
     >
       <div
@@ -18,7 +16,7 @@ export default function Photo(props) {
           backgroundRepeat: 'no-repeat',
           backgroundSize: '100%',
           overflow: 'hidden',
-          height: '100%'
+          height: '100%',
         }}
       ></div>
     </div>

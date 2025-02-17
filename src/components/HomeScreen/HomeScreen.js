@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
 import LandingImg from '../../assets/images/landing_page_img.jpg';
@@ -6,7 +5,7 @@ import LandingImgMobile from '../../assets/images/landing_page_img_3.jpg';
 
 export default function HomeScreen(props) {
   const { openHomeScreen } = props;
-  let tapToEnter = () => {
+  const tapToEnter = () => {
     if (window.innerWidth < 650) {
       return <div className='std-subtext'>(tap to enter)</div>;
     }
@@ -22,7 +21,7 @@ export default function HomeScreen(props) {
             display: 'block',
             height: 'auto',
             position: 'fixed',
-            width: '100%'
+            width: '100%',
           }}
         />
         <div className='home-screen-text'>

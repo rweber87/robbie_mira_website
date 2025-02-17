@@ -13,7 +13,7 @@ import Menu from './components/Menu/Menu';
 import Photo from './components/Photo/Photo';
 import Qanda from './components/Qanda/Qanda';
 import Rsvp from './components/Rsvp/Rsvp';
-import SaveTheDate from './components/SaveTheDate/SaveTheDate';
+// import SaveTheDate from './components/SaveTheDate/SaveTheDate';
 import Travel from './components/Travel/Travel';
 import Welcome from './components/Welcome/Welcome';
 
@@ -30,14 +30,14 @@ class App extends Component {
       hamburgerWidth: '0px',
       homeScreenDisplayed: shouldImageDisplay,
       imageSelected: imagesFunction(Images, imageDisplayed),
-      selectedMenuItem: imageDisplayed ? imageDisplayed : 'welcome'
+      selectedMenuItem: imageDisplayed ? imageDisplayed : 'welcome',
     };
   }
 
   changePhoto = (imageSelected, selectedMenuItem) => {
     this.setState({
       imageSelected,
-      selectedMenuItem
+      selectedMenuItem,
     });
   };
 
@@ -45,7 +45,7 @@ class App extends Component {
     this.setState({ hamburgerWidth: '0px' });
   };
 
-  openHamburgerMenu = hamburgerWidth => {
+  openHamburgerMenu = (hamburgerWidth) => {
     this.setState({ hamburgerWidth });
   };
 
@@ -58,7 +58,7 @@ class App extends Component {
       hamburgerWidth,
       homeScreenDisplayed,
       imageSelected,
-      selectedMenuItem
+      selectedMenuItem,
     } = this.state;
     const { client } = this.props;
 
@@ -90,7 +90,7 @@ class App extends Component {
                       fontSize: '34px',
                       position: 'absolute',
                       top: '150px',
-                      left: `${window.innerWidth - 50}px`
+                      left: `${window.innerWidth - 50}px`,
                     }}
                     onClick={() => this.openHamburgerMenu(window.innerWidth)}
                   >

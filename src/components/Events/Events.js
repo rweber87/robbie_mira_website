@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function Events() {
   return (
     <div className='welcome-text'>
@@ -111,7 +109,7 @@ export default function Events() {
           href='https://www.tripsavvy.com/english-garden-munich-1520202'
           rel='noopener noreferrer'
           style={{
-            color: 'white'
+            color: 'white',
           }}
           target='_blank'
         >
@@ -125,7 +123,7 @@ export default function Events() {
           href='http://www.munich-touristinfo.de/museums.htm'
           rel='noopener noreferrer'
           style={{
-            color: 'white'
+            color: 'white',
           }}
           target='_blank'
         >
@@ -139,7 +137,7 @@ export default function Events() {
           href='https://www.lonelyplanet.com/germany/munich/attractions/olympiapark/a/poi-sig/1208047/1320849'
           rel='noopener noreferrer'
           style={{
-            color: 'white'
+            color: 'white',
           }}
           target='_blank'
         >
@@ -153,7 +151,7 @@ export default function Events() {
           href='https://www.tripsavvy.com/munichs-best-beer-gardens-1519979'
           rel='noopener noreferrer'
           style={{
-            color: 'white'
+            color: 'white',
           }}
           target='_blank'
         >

@@ -4,6 +4,6 @@ export function compileDataToSave(state) {
     email: state.email,
     last_name: state.lastName,
     response: state.isGoing ? 'yes' : 'no',
-    writtenResponse: state.allergyComments
+    writtenResponse: state.allergyComments,
   };
 }

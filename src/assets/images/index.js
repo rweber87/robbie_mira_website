@@ -10,45 +10,45 @@ const images = {
   welcome: {
     image: image1,
     style: {
-      backgroundPosition: '50% 25%'
-    }
+      backgroundPosition: '50% 25%',
+    },
   },
   thebigday: {
     image: image7,
     style: {
-      backgroundPosition: '50% 30%'
-    }
+      backgroundPosition: '50% 30%',
+    },
   },
   activities: {
     image: image2,
     style: {
-      backgroundPosition: '50% 35%'
-    }
+      backgroundPosition: '50% 35%',
+    },
   },
   travel: {
     image: image3,
     style: {
-      backgroundPosition: '50% 10%'
-    }
+      backgroundPosition: '50% 10%',
+    },
   },
   lodging: {
     image: image4,
     style: {
-      backgroundPosition: '50% 60%'
-    }
+      backgroundPosition: '50% 60%',
+    },
   },
   rsvp: {
     image: image5,
     style: {
-      backgroundPosition: '50% 50%'
-    }
+      backgroundPosition: '50% 50%',
+    },
   },
   qanda: {
     image: image6,
     style: {
-      backgroundPosition: '50% 55%'
-    }
-  }
+      backgroundPosition: '50% 55%',
+    },
+  },
 };
 
 export default images;

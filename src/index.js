@@ -8,7 +8,7 @@ import 'semantic-ui-css/semantic.min.css';
 import App from './App';
 
 const client = new ApolloClient({
-  uri: `https://peaceful-bastion-92264.herokuapp.com/graphql`
+  uri: `https://peaceful-bastion-92264.herokuapp.com/graphql`,
 });
 
 ReactDOM.render(

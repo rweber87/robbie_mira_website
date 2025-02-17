@@ -6,7 +6,7 @@ import addResponseMutation from '../../grapql/mutations/addResponse.js';
 
 const aws = require('aws-sdk');
 const envConfirmCode = new aws.S3({
-  confirmCode: process.env.REACT_APP_CONFIRM_CODE
+  confirmCode: process.env.REACT_APP_CONFIRM_CODE,
 });
 
 class Rsvp extends Component {
@@ -23,7 +23,7 @@ class Rsvp extends Component {
       isGoing: false,
       isNotGoing: false,
       isNotGoingMessage: false,
-      lastName: ''
+      lastName: '',
     };
   }
 
@@ -37,7 +37,7 @@ class Rsvp extends Component {
     this.setState({
       isButtonActive,
       isGoing: true,
-      isNotGoing: false
+      isNotGoing: false,
     });
   };
 
@@ -52,19 +52,19 @@ class Rsvp extends Component {
       isButtonActive,
       isGoing: false,
       isNotGoing: true,
-      isNotGoingMessage: true
+      isNotGoingMessage: true,
     });
     setTimeout(() => this.setState({ isNotGoingMessage: false }), 5000);
   };
 
-  onFormSubmit = async e => {
+  onFormSubmit = async (e) => {
     const { client } = this.props;
 
     if (this.isButtonActive()) {
       try {
         const response = await client.mutate({
           mutation: addResponseMutation,
-          variables: compileDataToSave(this.state)
+          variables: compileDataToSave(this.state),
         });
         if (response.data.addResponse) {
           this.setState({
@@ -76,7 +76,7 @@ class Rsvp extends Component {
             isButtonActive: false,
             isGoing: false,
             isNotGoing: false,
-            lastName: ''
+            lastName: '',
           });
         }
         setTimeout(() => this.setState({ displayMessage: false }), 5000);
@@ -88,14 +88,8 @@ class Rsvp extends Component {
   };
 
   isButtonActive = () => {
-    const {
-      confirmCode,
-      email,
-      firstName,
-      isGoing,
-      isNotGoing,
-      lastName
-    } = this.state;
+    const { confirmCode, email, firstName, isGoing, isNotGoing, lastName } =
+      this.state;
 
     if (
       firstName &&
@@ -126,7 +120,7 @@ class Rsvp extends Component {
       isGoing,
       isNotGoing,
       isNotGoingMessage,
-      lastName
+      lastName,
     } = this.state;
     let buttonOpacity = isButtonActive ? '1' : '0.5';
 
@@ -146,7 +140,7 @@ class Rsvp extends Component {
         <div className='outer-ui-form'>
           <Form
             onBlur={() => this.isButtonActive()}
-            onSubmit={async e => await this.onFormSubmit(e)}
+            onSubmit={async (e) => await this.onFormSubmit(e)}
             success
           >
             <Form.Group widths='equal'>

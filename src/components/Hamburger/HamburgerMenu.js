@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function HamburgerMenu(props) {
@@ -7,7 +6,7 @@ export default function HamburgerMenu(props) {
     closerHamburgerMenu,
     hamburgerWidth,
     images,
-    selectedMenuItem
+    selectedMenuItem,
   } = props;
 
   return (
