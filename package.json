@@ -23,6 +23,9 @@
     "eslint-plugin-react": "^7.16.0",
     "react-scripts": "^5.0.1"
   },
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
