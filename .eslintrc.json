@@ -21,7 +21,7 @@
     "prefer-const": "off",
     "no-invalid-this": "off",
     "operator-linebreak": "off",
-    "max-len": ["warn", { "code": 120 }],
+    "max-len": ["warn", { "code": 700 }],
     "require-jsdoc": 0,
     "indent": "off",
     "comma-dangle": "off"
