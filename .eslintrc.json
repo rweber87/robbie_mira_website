@@ -23,6 +23,7 @@
     "operator-linebreak": "off",
     "max-len": ["warn", { "code": 120 }],
     "require-jsdoc": 0,
+    "indent": "off",
     "comma-dangle": "off"
   }
 }

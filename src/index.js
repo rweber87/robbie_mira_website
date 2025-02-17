@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
-import ApolloClient from 'apollo-boost';
-import { ApolloProvider } from 'react-apollo';
+import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
 import './index.css';
 import 'semantic-ui-css/semantic.min.css';
 import App from './App';
 
 const client = new ApolloClient({
   uri: `https://peaceful-bastion-92264.herokuapp.com/graphql`,
+  cache: new InMemoryCache(),
 });
 
 ReactDOM.render(
